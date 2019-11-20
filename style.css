@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	
+	font-family: "futura", sans-serif;
+	background-color: lightblue;
+
+}
+
+.navbar{
+	
+	
+	width: 250px;
+	height: auto;
+	
+	position: fixed;
+	
+}
+a{
+	
+	color: black;
+	text-decoration: none;
+}
+
+a:visited{
+
+	color: black;
+
+}
+
+#logo{
+	
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	
+	
+	
+}
+.button-stack{
+	
+	margin-left: 20px;
+	
+	
+}
+
+.bigbig{
+	
+	font-size: 120px;
+	margin: 0;
+}
+
+.big{
+	
+	font-size: 70px;
+	margin: 0;
+	
+}
+	
+
+#design{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#design:hover{
+	
+	color: rebeccapurple;
+	
+}
+
+#code{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#code:hover{
+	
+	color: mediumseagreen;
+	
+}
+
+#ideas{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#ideas:hover{
+	
+	color: darkorange;
+	
+}
+
+#ig{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#ig:hover{
+	
+	color: hotpink;
+	
+}
+
+#email{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#email:hover{
+	
+	color: mediumslateblue;
+	
+}
+
+#sns{
+	
+	position: fixed;
+	bottom: 30px;
+	
+	
+}
+
+.element{
+	
+	margin-left: 270px;
+	height: auto;
+	width: auto;
+	margin-right: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+.element:hover .banner{
+	
+	opacity: 0.5;
+}
+
+.half-half{
+	
+	margin-left: 270px;
+	height: auto;
+	width: auto;;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	margin-right: 20px;
+	
+}
+
+.banner{
+	
+	width: 100%;
+	height: auto; 
+	
+	opacity: 1;
+	
+	transition-property: opacity;
+	transition-timing-function: ease-in;
+	transition-duration: 0.1s;
+}
+
+.banner-static{
+	
+	width: 100%;
+	height: auto; 
+	
+
+}
+
+
+
+
+.half-left{
+	
+	width: 48%;
+	height: auto;
+	margin-right: 2%;
+	
+	
+}
+
+.half-right{
+	
+	width: 48%;
+	height: auto;
+	margin-left: 2%;
+	
+	
+}
+
+.box{
+	
+	width: 150px;
+	height: 150px;
+	font-size: 80px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	
+}
+
+.table{
+	
+	margin: auto;
+	
+}
+
+#newBoggle{
+	
+	font-size: 50px;
+	
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	
+	transition-property: color;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+	
+}
+
+#newBoggle:hover{
+	
+	color: aqua;
+	
+}
+
+.linkk{
+	
+	color: red;
+	
+	transition-property: color;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+	
+}
+
+.linkk:hover{
+	
+	color: blue;
+	
+}
+
+.calckey{
+	
+	width: 100px;
+	height: 100px;
+	border-radius: 40px;
+	font-size: 40px;
+	font-family: "futura", sans-serif;
+	background-color: white;
+
+	transition-property: background-color, color;
+	transition-timing-function: ease-in;
+	transition-duration: 0.1s;
+	border: 5px solid lightgrey;
+	
+	
+}
+
+.calckey:hover{
+	
+	background-color: black;
+	color: white;
+	
+	
+}
+
+#displaybox{
+	
+	width: 360px;
+	height: 100px;
+	border-radius: 40px;
+	border: 5px solid lightgrey;
+	font-size: 40px;
+	font-family: "futura", sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
