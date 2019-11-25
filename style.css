@@ -4,8 +4,23 @@
 body{
 	
 	font-family: "futura", sans-serif;
-	background-coslor: white;
+	background-color: white;
 
+}
+
+
+
+input:focus{
+	
+	outline:none !important;
+	
+}
+
+
+button:focus{
+	
+	outline:none !important;
+	
 }
 
 .navbar{
@@ -249,16 +264,17 @@ a:visited{
 	background-color: black;
 	color: white;
 	padding: 20px;
+	transform: scale(1.0);
 	
-	transition-property: color;
+	transition-property: transform;
 	transition-timing-function: ease-in;
-	transition-duration: 0.2s;
+	transition-duration: 0.1s;
 	
 }
 
 #newBoggle:hover{
 	
-	color: aqua;
+	transform: scale(1.05);
 	
 }
 
@@ -316,3 +332,131 @@ a:visited{
 	
 }
 
+.img25{
+	
+	width: 320px;
+	height: 220px;
+	margin: 10px;
+
+	
+}
+
+.container{
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-evenly;
+}
+
+.inputbox{
+
+	background-color: white;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	border: 5px solid white;
+	font-family: "futura", sans-serif;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 600px;
+	
+	
+}
+
+#typebox{
+	
+	margin-bottom: 40px;
+	margin-top: 20px;
+	background-color: white;
+	box-shadow: 0 0 white;
+	
+	transition-property: background-color, box-shadow;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+	
+}
+
+#typebox:hover{
+	
+	background-color: lightblue;
+	box-shadow: 0 0 10px white;
+	
+	
+}
+
+
+#morsebox{
+	
+	margin-bottom: 20px;
+	margin-top: 40px;
+	
+}
+
+
+.inputsection{
+	
+	
+	background-color: lightblue;
+	border-radius: 30px;
+
+
+	
+}
+
+.button1{
+	
+	width: 200px;
+	height: 100px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	font-family: "futura", sans-serif;
+	font-size: 20px;
+	border-radius: 20px;
+	border: 5px solid white;
+	box-shadow: 0 0 black;
+
+	background-color: white;
+	color: black;
+
+	transition-property: background-color, box-shadow;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+	
+}
+
+.button1:hover{
+	
+	background-color: lightblue;
+	box-shadow: 0 0 20px white;
+	
+}
+
+.button1:active{
+	
+	
+	background-color: yellow;
+	
+}
+
+#logo{
+	
+	transform: scale(1.0);
+	
+	transition-property: transform;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	
+}
+
+#logo:hover{
+	
+	transform: scale(1.05);
+	
+}
+
+.abstract a{
+	
+	color: dodgerblue;
+	
+}
