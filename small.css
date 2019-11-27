@@ -44,10 +44,9 @@ body{
 }
 .navlink{
 	
-	background-color: lightblue;
-	padding: 15px;
-	border-radius: 20px;
-	font-size: 50px;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px;
 	
 }
 
@@ -68,56 +67,58 @@ body{
 
 #design{
 	
-	background-color: rebeccapurple;
-	color: white;
+	border-bottom: 20px solid purple;
+	color: black;
 	
-	transition-property: background-color;
+	transition-property: color;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
 
 #design:hover{
 	
-	background-color: mediumpurple;
+ 	color: purple;
 	
 }
 
 #code{
 	
-	background-color: forestgreen;
-	color: white;
+	color: black;
+	border-bottom: 20px solid green;
 	
-	transition-property: background-color;
+	transition-property: color;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
 
 #code:hover{
 	
-	background-color: limegreen;
+	color: green;
 	
 }
 
 #ideas{
 	
-	background-color: orangered;
-	color: white;
+	border-bottom: 20px solid orangered;
+	color: black;
 	
-	transition-property: background-color;
+	transition-property: color;
 	transition-duration: 0.2s;
 	
 }
 
 #ideas:hover{
 	
-	background-color: orange;
+	color: orangered;
 	
 }
 
 .element{
 	
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
 	text-align: center;
 	
 }
@@ -137,7 +138,7 @@ body{
 	
 	width: 100%;
 	opacity: 1;
-	border-radius: 20px;
+	
 	
 	transition-property: opacity;
 	trransition-timing-function: ease;
