@@ -101,7 +101,7 @@ body{
 
 #ideas{
 	
-	border-bottom: 20px solid orangered;
+	border-bottom: 20px solid royalblue;
 	color: black;
 	
 	transition-property: color;
@@ -110,6 +110,22 @@ body{
 }
 
 #ideas:hover{
+	
+	color: royalblue;
+	
+}
+
+#minis{
+	
+	border-bottom: 20px solid orangered;
+	color: black;
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#minis:hover{
 	
 	color: orangered;
 	
@@ -139,7 +155,6 @@ body{
 	width: 100%;
 	opacity: 1;
 	
-	
 	transition-property: opacity;
 	trransition-timing-function: ease;
 	transition-duration: 0.2s;
@@ -149,7 +164,6 @@ body{
 .banner-static{
 	
 	width: 100%;
-	border-radius: 20px;
 }
 
 .element:hover .banner{

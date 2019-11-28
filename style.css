@@ -87,7 +87,7 @@ a:visited{
 
 #design:hover{
 	
-	color: rebeccapurple;
+	color: purple;
 	
 }
 
@@ -104,7 +104,24 @@ a:visited{
 
 #code:hover{
 	
-	color: mediumseagreen;
+	color: green;
+	
+}
+
+#minis{
+	
+	font-size: 40px;
+	color: black;
+	
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+	
+}
+
+#minis:hover{
+	
+	color: orangered;
 	
 }
 
@@ -121,7 +138,7 @@ a:visited{
 
 #ideas:hover{
 	
-	color: darkorange;
+	color: royalblue;
 	
 }
 
