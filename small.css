@@ -68,7 +68,7 @@ body{
 
 #design{
 	
-	border-bottom: 20px solid purple;
+	border-bottom: 30px solid purple;
 	color: black;
 	bottom: 0px;
 	position: relative;
@@ -83,14 +83,14 @@ body{
 	
  	color: purple;
 	bottom: 20px;
-	border-bottom: 40px solid purple;
+	border-bottom: 50px solid purple;
 	
 }
 
 #code{
 	
 	color: black;
-	border-bottom: 20px solid green;
+	border-bottom: 30px solid green;
 	bottom: 0px;
 	position: relative;
 	
@@ -104,14 +104,14 @@ body{
 #code:hover{
 	
 	color: green;
-	border-bottom: 40px solid green;
+	border-bottom: 50px solid green;
 	bottom: 20px;
 	
 }
 
 #ideas{
 	
-	border-bottom: 20px solid royalblue;
+	border-bottom: 30px solid royalblue;
 	color: black;
 	position: relative;
 	bottom: 0px;
@@ -125,14 +125,14 @@ body{
 #ideas:hover{
 	
 	color: royalblue;
-	border-bottom: 40px solid royalblue;
+	border-bottom: 50px solid royalblue;
 	bottom: 20px;
 	
 }
 
 #minis{
 	
-	border-bottom: 20px solid orangered;
+	border-bottom: 30px solid orangered;
 	color: black;
 	
 	position: relative;
@@ -149,7 +149,7 @@ body{
 	
 	color: orangered;
 	bottom: 20px;
-	border-bottom: 40px solid orangered;
+	border-bottom: 50px solid orangered;
 	
 }
 
