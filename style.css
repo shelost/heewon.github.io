@@ -69,18 +69,37 @@ a:visited{
 .big{
 	
 	font-size: 70px;
-	margin: 0;
+	margin-top: 10px;
+	padding-left: 20px;
+	
+	border-left: 20px solid black;
+	
+	transition-property: border;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
 	
 }
+
+
+.navlink{
 	
+	padding-left: 10px;
+	position: relative;
+	left: 0;
+
+	
+}
+
 
 #design{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid purple;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -88,6 +107,7 @@ a:visited{
 #design:hover{
 	
 	color: purple;
+	border-left: 30px solid purple;
 	
 }
 
@@ -95,9 +115,11 @@ a:visited{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid green;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -105,6 +127,7 @@ a:visited{
 #code:hover{
 	
 	color: green;
+	border-left: 30px solid green;
 	
 }
 
@@ -112,9 +135,11 @@ a:visited{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid orangered;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -122,6 +147,7 @@ a:visited{
 #minis:hover{
 	
 	color: orangered;
+	border-left: 30px solid red;
 	
 }
 
@@ -129,9 +155,11 @@ a:visited{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid royalblue;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -139,6 +167,7 @@ a:visited{
 #ideas:hover{
 	
 	color: royalblue;
+	border-left: 30px solid royalblue;
 	
 }
 
@@ -146,9 +175,12 @@ a:visited{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid hotpink;
+	padding-left: 10px;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -156,6 +188,7 @@ a:visited{
 #ig:hover{
 	
 	color: hotpink;
+	border-left: 30px solid hotpink;
 	
 }
 
@@ -163,9 +196,12 @@ a:visited{
 	
 	font-size: 40px;
 	color: black;
+	border-left: 10px solid mediumslateblue;
+	padding-left: 10px;
 	
 	
-	transition-property: color;
+	transition-property: color, border;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -173,6 +209,7 @@ a:visited{
 #email:hover{
 	
 	color: mediumslateblue;
+	border-left: 30px solid mediumslateblue;
 	
 }
 
@@ -195,9 +232,28 @@ a:visited{
 	
 }
 
-.element:hover .banner{
+.element-main{
 	
-	opacity: 0.5;
+	margin-left: 270px;
+	height: auto;
+	width: auto;
+	margin-right: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+.element-main:hover .banner{
+
+	opacity: 0.7;
+	
+	
+}
+
+.element-main:hover .big{
+	
+	border-left: 70px solid black;
+	
 }
 
 .half-half{
@@ -217,9 +273,10 @@ a:visited{
 	width: 100%;
 	height: auto; 
 	
-	opacity: 1;
+	outline: 0px solid black;
+	outline-offset: -20px;
 	
-	transition-property: opacity;
+	transition-property: opacity, outline;
 	transition-timing-function: ease-in;
 	transition-duration: 0.1s;
 }
@@ -371,12 +428,12 @@ a:visited{
 	background-color: white;
 	font-size: 20px;
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 5px solid white;
 	font-family: "futura", sans-serif;
 	margin-left: 40px;
 	margin-right: 40px;
-	width: 600px;
+	width: 800px;
 	
 	
 }
@@ -387,17 +444,6 @@ a:visited{
 	margin-top: 20px;
 	background-color: white;
 	box-shadow: 0 0 white;
-	
-	transition-property: background-color, box-shadow;
-	transition-timing-function: ease-in;
-	transition-duration: 0.2s;
-	
-}
-
-#typebox:hover{
-	
-	background-color: lightblue;
-	box-shadow: 0 0 10px white;
 	
 	
 }
@@ -414,8 +460,8 @@ a:visited{
 .inputsection{
 	
 	
-	background-color: lightblue;
-	border-radius: 30px;
+	background-color: black;
+	border-radius: 10px;
 
 
 	
@@ -429,14 +475,14 @@ a:visited{
 	margin-bottom: 40px;
 	font-family: "futura", sans-serif;
 	font-size: 20px;
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 5px solid white;
 	box-shadow: 0 0 black;
 
 	background-color: white;
-	color: black;
+	transform: scale(1.0);
 
-	transition-property: background-color, box-shadow;
+	transition-property: transform, box-shadow;
 	transition-timing-function: ease-in;
 	transition-duration: 0.2s;
 	
@@ -444,17 +490,12 @@ a:visited{
 
 .button1:hover{
 	
-	background-color: lightblue;
+	transform: scale(1.05);
 	box-shadow: 0 0 20px white;
 	
 }
 
-.button1:active{
-	
-	
-	background-color: yellow;
-	
-}
+
 
 #logo{
 	
