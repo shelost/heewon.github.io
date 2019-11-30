@@ -29,7 +29,7 @@ a:visited{
 
 body{
 	
-	font-family: "futura", sans-serif;
+	font-family: "Futura", "Futura PT", "Arial", sans-serif;
 	background-color: white;
 
 }
@@ -229,6 +229,7 @@ body{
 	font-size: 30px;
 	margin-bottom: 40px;
 	text-align: center;
+	font-family: "Arial", sans-serif;
 	
 	
 }
@@ -389,8 +390,22 @@ body{
 	
 	width: 400px;
 	margin: 10px;
-	border-radius: 20px;
 	
 }
 
+.abstract a{
+	
+	color: dodgerblue;
+	
+	transition-property: color;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+	
+}
+
+.abstract a:hover{
+	
+	color: blue;
+	
+}
 
