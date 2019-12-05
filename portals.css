@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+
+#canvas{
+
+
+    background-color: beige;
+    width: 800px;
+    height: 800px;
+}

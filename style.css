@@ -530,3 +530,47 @@ a:visited{
 	
 }
 
+#canvas{
+
+	width: 450px;
+	height: 450px;
+	margin: 0;
+}
+
+.fullscreen{
+
+	background-color: orange;
+	color: white;
+	font-family: "Arial", sans-serif;
+	width: 200px;
+	font-size: 10px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	text-align: center;
+	line-height: 40px;
+	transform: scale(1.0);
+
+
+	transition-property: color, background-color, transform;
+	transition-timing-function: ease-in;
+	transition-duration: 0.2s;
+
+}
+
+
+.fullscreen:hover{
+
+	background-color: orangered;
+	color: yellow;
+	transform: scale(1.05);
+
+
+
+	
+}
+
+#snitch{
+	margin: auto;
+}
