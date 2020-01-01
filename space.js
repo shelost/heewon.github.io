@@ -19,7 +19,7 @@ const player = {
 
 const blast = {
 
-  fired: false,
+  
 
 }
 
@@ -31,6 +31,7 @@ const controller = {
   right:false,
   up:false,
   down: false,
+  fire: false,
   keyListener:function(event) {
 
     var key_state = (event.type == "keydown")?true:false;
@@ -49,6 +50,9 @@ const controller = {
       case 40: // Down
         controller.down = key_state;
       break;
+      case 212:
+        controller.fire = key_state;
+        break;
 
     }
 

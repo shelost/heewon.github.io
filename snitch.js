@@ -5,6 +5,7 @@ const ctx = canvas.getContext('2d');
 
 var points = 0;
 
+
 const player = {
 
   x: 150,
@@ -315,9 +316,11 @@ const loop = function() {
 };
 
 
-window.addEventListener("keydown", controller.keyListener);
+  window.addEventListener("keydown", controller.keyListener);
 window.addEventListener("keyup", controller.keyListener);
-window.requestAnimationFrame(loop)
+window.requestAnimationFrame(loop);
+
+
 
 
 ;
