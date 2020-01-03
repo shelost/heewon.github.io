@@ -744,5 +744,26 @@ a:visited{
 	width: 80vw;
 	height: 80vh;
 
+}
+
+.bg-pong{
+
+	display: flex;
+	justify-content: center;
+	vertical-align: center;
+
+
+	background-color: red;
+	
+	background-image: url("../IMG-2/pong-thumb.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	flex: 1;
+	background-size: cover;
+	text-align: center;
+	vertical-align: center;
+	width: 80vw;
+	height: 80vh;
 
 }
+
