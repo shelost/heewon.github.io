@@ -526,12 +526,6 @@ a:visited{
 	
 }
 
-#canvas{
-
-	width: 450px;
-	height: 450px;
-	margin: 0;
-}
 
 .fullscreen{
 
@@ -767,3 +761,19 @@ a:visited{
 
 }
 
+.game-desktop{
+
+	display: block;
+}
+
+.game-btn{
+
+	position: absolute;
+	bottom: 10px;
+
+}
+
+.mobile{
+
+	display: none;
+}

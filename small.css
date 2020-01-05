@@ -117,7 +117,7 @@ body{
 	bottom: 0px;
 	
 	transition-property: color, bottom, border;
-	trransition-timing-function: ease;
+	transition-timing-function: ease;
 	transition-duration: 0.1s;
 	
 }
@@ -194,7 +194,7 @@ body{
 	opacity: 1;
 	
 	transition-property: opacity;
-	trransition-timing-function: ease;
+	transition-timing-function: ease;
 	transition-duration: 0.2s;
 	
 }
@@ -375,7 +375,7 @@ body{
 	
 	transform: scale(1.0);
 	
-	transition-properrty: transform;
+	transition-property: transform;
 	transition-duration: 0.1s;
 	transition-timing-function: ease;
 }
@@ -408,4 +408,65 @@ body{
 	color: blue;
 	
 }
+
+
+
+.controls{
+
+	display: flex;
+
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	margin: 0;
+
+
+	justify-content: center;
+}
+
+.btn-stack{
+
+	margin: 0;
+	font-family: "Arial", sans-serif;
+
+	width: 33.33333vw;
+	z-index: 4;
+
+}
+
+.game-btn{
+
+	background-color: white;
+	opacity: 0.5;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+.game-btn:hover{
+
+	opacity: 0.8;
+}
+
+#left-btn{
+
+	height: 100px;
+}
+
+#up-btn{
+
+	height: 50px;
+}
+
+#down-btn{
+
+	height: 50px;
+}
+
+#right-btn{
+
+	height: 100px;
+}
+
 

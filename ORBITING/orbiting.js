@@ -5,22 +5,35 @@ const canvas = document.getElementById("canvas");
 const canvas2 = document.getElementById("canvas2")
 const canvas3 = document.getElementById("canvas3")
 
+
 const ctx = canvas.getContext('2d');
 const ctx2 = canvas2.getContext('2d');
 const ctx3 = canvas3.getContext('2d');
 
-ctx.canvas.width = window.innerWidth;
-ctx.canvas.height = window.innerHeight;
-ctx2.canvas.width = window.innerWidth;
-ctx2.canvas.height = window.innerHeight;
-ctx3.canvas.width = window.innerWidth;
-ctx3.canvas.height = window.innerHeight;
+
+
+canvas.height = window.innerHeight;
+canvas2.height = window.innerHeight;
+canvas3.height = window.innerHeight;
+
+
+
+canvas.width = window.innerWidth;
+canvas2.width = window.innerWidth;
+canvas3.width = window.innerWidth;
 
 
 var centerx = canvas.width/2;
 var centery = canvas.height/2;
 
-var scl = 0.00010*canvas.height; // The scale factor helps to adjust for different screen sizes 
+if (window.innerHeight < window.innerWidth){
+
+  var scl = 0.00010*canvas.height; // The scale factor helps to adjust for different screen sizes 
+
+}else{
+
+  var scl = 0.00010*canvas.width;
+}
 
 var showStats = false;
 
@@ -61,13 +74,13 @@ const player = {
 
 const orbits = {
 
-  one: canvas.height*0.45,
+  one: scl*4500,
 
-  two: canvas.height*0.36,
+  two: scl*3600,
 
-  three: canvas.height*0.26,
+  three: scl*2600,
 
-  four: canvas.height*0.15
+  four: scl*1600
 }
 
 
@@ -284,6 +297,7 @@ const bgstar = {
 }
 
 
+
 // Handle Input
 
 const controller = {
@@ -302,19 +316,24 @@ const controller = {
     switch(event.keyCode) {
 
       case 37:// Left
+
+      
         controller.left = key_down;
         break;
 
       case 39:// Right
+
         controller.right = key_down;
         break;
 
       case 38:// Up
-        controller.up = key_down;
+
+        player.level += 1;
+       
         break;
       
       case 40: // Down
-        controller.down = key_down;
+        player.level -= 1;
         break;
 
       case 83: // S Key
@@ -333,9 +352,50 @@ const controller = {
   }
 }
 
+// Mobile Button controls
+
+var left = document.getElementById("left-btn")
+var right = document.getElementById("right-btn")
+var up = document.getElementById("up-btn")
+var down = document.getElementById("down-btn")
+
+left.addEventListener("mousedown", function(){
+
+  controller.left = true;
+})
+
+left.addEventListener("mouseup", function(){
+
+  controller.left = false;
+})
+
+right.addEventListener("mousedown", function(){
+
+  controller.right = true;
+})
+
+right.addEventListener("mouseup", function(){
+
+  controller.right = false;
+})
+
+up.addEventListener("mousedown", function(){
+
+  player.level +=1;
+})
+
+down.addEventListener("mousedown", function(){
+
+  player.level -= 1;
+})
+
+
+
+
 // Main Animation Loop
 
 const loop = function(time) {
+
 
   window.addEventListener('resize', function () {
     canvas.width = window.innerWidth;
@@ -348,17 +408,21 @@ const loop = function(time) {
 
   // Handle Input
 
-  if (controller.up) {
+ 
+  if (controller.up){
 
-    player.level +=1;
+    player.level += 1;
     paused = false;
   }
+
 
   if (controller.down){
 
     player.level -= 1;
     paused = false;
   }
+
+ 
 
   if (controller.left) {
 
@@ -423,30 +487,33 @@ const loop = function(time) {
   // Inter-Orbit Movement
   // Bit sloppy, but it works
 
-  if (player.level < 0){
 
-    player.level = 0;
+    if (player.level < 1){
 
-  }else if (0 <= player.level && player.level < 7){
+      player.level = 1;
+  
+    }else if (player.level === 1){
+  
+      player.radius = orbits.one;
+  
+    }else if (player.level === 2){
+  
+      player.radius = orbits.two;
+  
+    }else if (player.level === 3){
+  
+      player.radius = orbits.three;
+  
+    }else if (player.level === 4){
+  
+      player.radius = orbits.four;
+  
+    }else if (player.level > 4){
+  
+      player.level = 4;
+    }
 
-    player.radius = orbits.one;
-
-  }else if (7 <= player.level && player.level < 14){
-
-    player.radius = orbits.two;
-
-  }else if (14 <= player.level && player.level < 21){
-
-    player.radius = orbits.three;
-
-  }else if (21 <= player.level && player.level < 28){
-
-    player.radius = orbits.four;
-
-  }else if (28 <= player.level){
-
-      player.level = 28;
-  }
+  
 
   // ENEMIES
   
@@ -1133,9 +1200,6 @@ const loop = function(time) {
   ctx3.font = "30px Arial"
   ctx3.fillText(timeCounter, canvas.width-70, canvas.height-30); // Time Counter
 
-
-  
-
   // Animation Loop
   window.requestAnimationFrame(loop);
 
@@ -1144,10 +1208,12 @@ const loop = function(time) {
 // Extra Functions
 
 function rotate(img, x, y, scale, rot){
+
   ctx.setTransform(scale, 0, 0, scale, x, y);
   ctx.rotate(rot);
   ctx.drawImage(img, -img.width / 2, -img.height / 2);
   ctx.setTransform(1, 0, 0, 1, 0, 0);
+
 }
 
 function reset(){
@@ -1234,5 +1300,11 @@ setInterval(function(){
 // Initialize
 
 window.addEventListener("keydown", controller.keyListener);
-window.addEventListener("keyup", controller.keyListener);
+
+window.addEventListener("keyup", function(){
+
+  controller.left = false;
+  controller.right = false;
+})
 window.requestAnimationFrame(loop);
+
