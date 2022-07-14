@@ -30,7 +30,7 @@ let DATA =
     },
      {
         title: 'I like to make web apps & sites.',
-        blurb: 'This is my representative recent work.',
+        blurb: `I've worked for everyone from personal clients to startups.`,
         items:
         [
             {
@@ -119,7 +119,7 @@ let DATA =
             },
             {
                 name: 'MARC',
-                blurb: 'Hub for all things related to MARC, the Markings Abstraction and Reasoning Corpus.',
+                blurb: 'The Markings Abstraction and Reasoning Corpus.',
                 href: 'https://shelost.github.io/marc',
                 img: 'marc',
                 active: true,

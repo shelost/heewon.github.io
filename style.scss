@@ -228,6 +228,7 @@ a{
         justify-content: space-between;
         align-items: center;
         z-index: 3;
+        background: white;
         #mast{
             margin-left: 15px;
             h1{
@@ -255,10 +256,13 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 60vw;
+        width: 90vw;
+        height: 50vw;
+        margin-left: 5vw;
+        margin-top: calc(0vw + 300px);
+        margin-bottom: 80px;
+        border-radius: 15px;
         text-align: center;
-        margin: 0;
         background-image: url('assets/adam2.png');
         background-size: cover;
         background-position: 100% 100%;
@@ -286,23 +290,21 @@ a{
         }
         */
         #tagline{
-          //  background: rgba(white, 0.7);
-            position: absolute;
-            right: 2.5vw;
-            bottom: 3vw;
             transition: 0.2s ease;
-            text-align: right;
-           // background-color: white;
+            margin-bottom: calc(50vw + 250px);
+            height: 500px;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            justify-self: center;
             h1{
-                font-size: 45px;
-                margin-bottom: 20px;
+                font-size: 35px;
+               // line-height: 48px;
+                margin: 0;
+                margin-bottom: 10px;
             }
             p{
-                font-size: 18px;
-                width: 500px;
+                font-size: 16px;
+                width: 90vw;
                 margin: 5px;
                 font-weight: 400;
                 color: rgba(black, 0.9);

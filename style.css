@@ -252,6 +252,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     z-index: 3;
+    background: white;
   }
   #navbar #mast {
     margin-left: 15px;
@@ -287,10 +288,13 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
-    height: 60vw;
+    width: 90vw;
+    height: 50vw;
+    margin-left: 5vw;
+    margin-top: calc(0vw + 300px);
+    margin-bottom: 80px;
+    border-radius: 15px;
     text-align: center;
-    margin: 0;
     background-image: url("assets/adam2.png");
     background-size: cover;
     background-position: 100% 100%;
@@ -319,12 +323,10 @@ a {
         */
   }
   #banner #tagline {
-    position: absolute;
-    right: 2.5vw;
-    bottom: 3vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
-    text-align: right;
+    margin-bottom: calc(50vw + 250px);
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,17 +334,16 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    justify-self: center;
   }
   #banner #tagline h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
   }
   #banner #tagline p {
-    font-size: 18px;
-    width: 500px;
+    font-size: 16px;
+    width: 90vw;
     margin: 5px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.9);
