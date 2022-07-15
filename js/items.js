@@ -151,6 +151,27 @@ let DATA =
                 href: 'https://shelost.github.io/marc/@/draw',
                 img: 'solve',
                 active: true,
+            },
+            {
+                name: 'Grid Cryptography',
+                blurb: '4 grid-based cryptography algorithms',
+                href: 'https://shelost.github.io/ellis/$/grid-crypt',
+                img: 'crypto',
+                active: false,
+            },
+            {
+                name: 'Grid Display',
+                blurb: '4 grid-based puzzle games.',
+                href: 'https://shelost.github.io/ellis/$/grid-display',
+                img: 'grid',
+                active: false,
+            },
+             {
+                name: 'Drawing Paths',
+                blurb: 'Path-based puzzle verification.',
+                href: 'https://shelost.github.io/ellis/$/draw',
+                img: 'paths',
+                active: false,
             }
         ]
     }

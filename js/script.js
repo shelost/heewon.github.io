@@ -40,3 +40,26 @@ for (let i = 0; i < DATA.length; i++){
 }
 
 Id('main').innerHTML = str
+
+
+let loop = () => {
+
+    let ratio =  window.innerWidth / window.innerHeight
+    let img = 1
+
+
+
+    if (ratio > 2.5) {
+        Id('banner').style.backgroundImage = `url(assets/adam4.png)`
+    } else if (window.innerWidth < 800) {
+        Id('banner').style.backgroundImage = `url(assets/adam3.png)`
+    } else{
+        Id('banner').style.backgroundImage = `url(assets/adam2.png)`
+    }
+
+    console.log('tr')
+
+    window.requestAnimationFrame(loop)
+}
+
+window.requestAnimationFrame(loop)
