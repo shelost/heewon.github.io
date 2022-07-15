@@ -94,6 +94,40 @@ a{
         }
     }
 
+    #stage{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+
+        .piece{
+            transform: scale(0.5);
+            position: absolute;
+            transform-origin: bottom left;
+        }
+
+        #rock-1{
+            bottom: 0;
+            left: -10vw;
+        }
+
+        #rock-2{
+            bottom: 0;
+            left: -25vw;
+        }
+
+        #rock-3{
+            bottom: 0;
+        }
+
+        #adam{
+            bottom: 5vh;
+            left: 20vw;
+        }
+    }
+
     #banner{
         display: flex;
         flex-direction: column;
@@ -103,33 +137,9 @@ a{
         height: 100vh;
         text-align: center;
         margin: 0;
-        //border: 10px solid black;
-        background-image: url('assets/adam2.png');
         background-size: cover;
         background-position: 100% 100%;
-        /*
-        #tagline{
-            background: rgba(white, 0.7);
-            padding: 50px;
-            border-radius: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(white, 0.9);
-            transition: 0.2s ease;
-            h1{
-                font-size: 45px;
-                margin-bottom: 50px;
-            }
-            p{
-                font-size: 18px;
-                width: 600px;
-                margin: 5px;
-                color: rgba(black, 0.5);
-            }
-            &:hover{
-                backdrop-filter: blur(0px);
-            }
-        }
-        */
+        background: #d1fff5;
         #tagline{
           //  background: rgba(white, 0.7);
             position: absolute;
