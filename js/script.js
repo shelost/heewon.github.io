@@ -114,6 +114,8 @@ let step = 0.5
 
 let loop = () => {
 
+    document.body.style.cursor = 'none'
+
     // hover
 
     // backdrop
