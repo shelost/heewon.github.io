@@ -235,7 +235,8 @@ a{
             height: 180px;
             border-radius: 15px;
             background-color: rgba(black, 0.1);
-            background-size: cover;
+            background-size: 100%;
+            background-position: center center;
             transition: 0.2s ease;
         }
         .expo{
@@ -268,6 +269,7 @@ a{
         &:hover{
             .img{
                 transform: scale(1.03);
+                background-size: 105%;
             }
             h1{
             }

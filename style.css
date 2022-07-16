@@ -254,7 +254,8 @@ a {
     height: 180px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.1);
-    background-size: cover;
+    background-size: 100%;
+    background-position: center center;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }
@@ -294,6 +295,7 @@ a {
   .item:hover .img {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
+    background-size: 105%;
   }
   .row {
     display: -webkit-box;
