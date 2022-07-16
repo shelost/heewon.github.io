@@ -48,6 +48,9 @@ a {
 }
 
 @media screen and (min-width: 800px) {
+  body {
+    padding-bottom: 100px;
+  }
   #navbar {
     position: fixed;
     top: 0;
@@ -289,8 +292,8 @@ a {
     font-size: 15px;
   }
   .item:hover .img {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   .row {
     display: -webkit-box;
@@ -299,7 +302,6 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: -100px;
   }
   .row .contact {
     display: -webkit-box;

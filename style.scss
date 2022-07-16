@@ -46,7 +46,7 @@ a{
 @media screen and (min-width: 800px){
 
     body{
-      //  padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     #navbar{
@@ -133,7 +133,6 @@ a{
 
         #rock-3{
             bottom: 0;
-            //filter: blur(10px);
         }
 
         #adam{
@@ -268,7 +267,7 @@ a{
         }
         &:hover{
             .img{
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
             h1{
             }
@@ -278,7 +277,6 @@ a{
     .row{
         display: flex;
         justify-content: center;
-        margin-bottom: -100px;
         .contact{
             display: flex;
             flex-direction: column;

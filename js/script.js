@@ -132,16 +132,16 @@ let loop = () => {
         let div = Class('hoverable')[i]
         let rect = div.getBoundingClientRect()
         if (hover(rect.x, rect.y, rect.width, rect.height)) {
-            // r1 = 20
-            r2 = 8
-            r1 += step
-            if (r1 > 25 || r1 < 15) {
-                step = step * -1
-            }
             hovering = true
         }
     }
-    if (!hovering) {
+    if (hovering) {
+        r2 = 8
+        r1 += step
+        if (r1 > 25 || r1 < 15) {
+            step = step * -1
+        }
+    } else {
         r1 = 15
         r2 = 10
     }
