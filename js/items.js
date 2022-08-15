@@ -510,8 +510,8 @@ let PAGES = {
 
             {
                 name: 'Intel',
-                blurb: `Pretty simple, but gets the message across: a shiny
-                stone tile with a W on it.`,
+                blurb: `Intel makes semiconductor chips. It would be cool if
+                the logo could convey that.`,
                 img: 'rd-17'
             },
             {
