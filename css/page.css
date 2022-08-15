@@ -12,31 +12,21 @@ a {
 }
 
 @media screen and (min-width: 800px) {
-  #main {
-    max-width: 1800px;
-    margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   #title {
     width: 96%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   #title h1 {
-    font-size: 60px;
+    font-weight: 900;
+    font-size: 40px;
     margin: 0;
   }
   #title p {
     line-height: 24px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   #title .tags {
     display: -webkit-box;
@@ -77,10 +67,31 @@ a {
       opacity: 1;
     }
   }
+  #main {
+    max-width: 1800px;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .elem {
     width: 48%;
     max-width: 800px;
     margin: 5px;
+  }
+  .elem.size-3 {
+    width: 32%;
+  }
+  .elem.size-4 {
+    width: 23.5%;
+  }
+  .elem.size-5 {
+    width: 18.5%;
   }
   .elem img {
     opacity: 0;
@@ -100,22 +111,23 @@ a {
             animation-fill-mode: forwards;
   }
   .elem .expo {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 5px;
     margin-bottom: 25px;
   }
   .elem .expo h1 {
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 800;
+    font-size: 24px;
     line-height: 16px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .elem .expo p {
     font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 19px;
     margin: 0;
+    color: rgba(0, 0, 0, 0.5);
   }
   .el {
     width: 200px;

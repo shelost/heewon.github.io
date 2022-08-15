@@ -29,27 +29,21 @@ a{
 
 @media screen and (min-width: 800px){
 
-    #main{
-        max-width: 1800px;
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     #title{
         //text-align: center;
         width: 96%;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 60px;
         h1{
-            font-size: 60px;
+            font-weight: 900;
+            font-size: 40px;
             margin: 0;
         }
         p{
             line-height: 24px;
             font-weight: 400;
-            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             //color: rgba(white, 0.6);
         }
         .tags{
@@ -78,10 +72,27 @@ a{
         }
     }
 
+    #main{
+        max-width: 1800px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .elem{
         width: 48%;
         max-width: 800px;
         margin: 5px;
+        &.size-3{
+            width: 32%;
+        }
+        &.size-4{
+            width: 23.5%;
+        }
+        &.size-5{
+            width: 18.5%;
+        }
         img{
             opacity: 0;
             width: 100%;
@@ -95,23 +106,23 @@ a{
             animation-fill-mode: forwards;
         }
         .expo{
-            margin-top: 20px;
+            margin-top: 15px;
             margin-left: 5px;
             margin-bottom: 25px;
             h1{
-                font-weight: 600;
-                font-size: 28px;
+                font-weight: 800;
+                font-size: 24px;
                 line-height: 16px;
                 margin: 0;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
                 //color: rgba(black, 0.7);
             }
             p{
                 font-weight: 400;
-                font-size: 15px;
-                line-height: 16px;
+                font-size: 14px;
+                line-height: 19px;
                 margin: 0;
-                //color: rgba(black, 0.5);
+                color: rgba(black, 0.5);
             }
         }
     }

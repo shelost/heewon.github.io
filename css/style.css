@@ -83,8 +83,6 @@ a {
   #square #title {
     padding: 30px 40px 50px 40px;
     border-radius: 25px;
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   }
   #square h1 {
     font-size: 60px;
@@ -128,7 +126,7 @@ a {
     margin-left: 10px;
   }
   #square p .logo {
-    height: 26px;
+    height: 22px;
     margin-right: 5px;
     margin-top: 2px;
     border-radius: 5px;
@@ -218,7 +216,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: -1;
     pointer-events: none;
   }
   @-webkit-keyframes zoom-in {
@@ -394,12 +392,10 @@ a {
     transition: 0.2s ease;
     margin: 8px;
     border-radius: 15px;
-    background: white;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
   .item .img {
     width: 100%;
@@ -413,10 +409,10 @@ a {
     border-radius: 13px 13px 0 0;
   }
   .item .expo {
-    margin-top: 8px;
-    padding-bottom: 15px;
-    text-align: center;
-    height: 70px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: 65px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -427,9 +423,6 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .item .expo .name {
     display: -webkit-box;
@@ -438,14 +431,13 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 5px;
   }
   .item .expo .name h1 {
-    margin: 5px;
-    font-size: 16px;
-    font-weight: 700;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 800;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }
@@ -454,16 +446,58 @@ a {
     color: #0074ff;
     border-radius: 20px;
     margin-left: 2px;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
   .item .expo p {
-    width: 90%;
     margin: 0;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.5);
   }
+  .item .tags {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+    height: 40px;
+  }
+  .item .tags .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: rgba(93, 0, 255, 0.05);
+    padding: 3px;
+  }
+  .item .tags .tag span {
+    font-size: 18px;
+    border-radius: 5px;
+    color: #5d00ff;
+  }
+  .item .tags .tag p {
+    opacity: 0;
+    display: none;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0px;
+    color: #5d00ff;
+  }
+  .item .tags .tag:hover p {
+    opacity: 1;
+  }
   .item:hover {
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
@@ -759,9 +793,8 @@ a {
             justify-content: center;
   }
   .item {
-    width: 80vw;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -777,9 +810,11 @@ a {
     transition: 0.2s ease;
   }
   .item .expo {
-    margin-top: 10px;
     padding-bottom: 20px;
-    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    height: 50px;
   }
   .item .expo .name {
     display: -webkit-box;
@@ -788,28 +823,65 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .item .expo .name h1 {
     font-weight: 900;
-    margin: 3px;
     font-size: 20px;
-    font-weight: 700;
-    -webkit-transition: 0.2s ease;
-    transition: 0.2s ease;
+    margin: 0;
   }
   .item .expo .name span {
     font-size: 20px;
     color: #0074ff;
     border-radius: 20px;
-    margin-left: 2px;
-    margin-top: 1px;
+    margin-top: 2px;
+    margin-left: 8px;
   }
   .item .expo p {
     margin: 0;
+    margin-top: 5px;
     font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .item .tags {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+    height: 40px;
+  }
+  .item .tags .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: rgba(93, 0, 255, 0.05);
+    padding: 3px;
+  }
+  .item .tags .tag span {
+    font-size: 18px;
+    border-radius: 5px;
+    color: #5d00ff;
+  }
+  .item .tags .tag p {
+    opacity: 0;
+    display: none;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0px;
+    color: #5d00ff;
+  }
+  .item .tags .tag:hover p {
+    opacity: 1;
   }
   .item:hover .img {
     -webkit-transform: scale(1.02);

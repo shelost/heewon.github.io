@@ -1,5 +1,3 @@
-
-
 //________________________________ Add HTML ________________________________//
 
 let str = ''
@@ -35,6 +33,59 @@ for (let i = 0; i < DATA.length; i++){
             `
                         </div>
                         <p> ${item.blurb} </p>
+                    </div>
+                    <div class = 'tags'>
+            `
+        for (let k = 0; k < item.tags.length; k++){
+            let tag = item.tags[k]
+
+            let icon = ''
+            let scale = 1
+
+            switch (tag.toLowerCase()) {
+                case 'gallery':
+                    icon = 'collections_bookmark'
+                    break
+                case 'origami':
+                    icon = 'devices_fold'
+                    break
+                case 'illustrator':
+                    icon = 'palette'
+                    break
+                case 'android':
+                    icon = 'android'
+                    break
+                case 'game':
+                    icon = 'sports_esports'
+                    break
+                case 'html':
+                    icon = 'code'
+                    break
+                case 'js':
+                    icon = 'javascript'
+                    scale = 1.3
+                    break
+                case 'css':
+                    icon = 'css'
+                    scale = 1.3
+                    break
+                case 'research':
+                    icon = 'science'
+                    break
+                default:
+                    break
+            }
+
+            str +=
+                `
+                <div class = 'tag'>
+                    <span class="material-symbols-outlined" style = 'transform: scale(${scale})'>${icon}</span>
+                    <p>${tag}</p>
+                </div>
+                `
+        }
+        str +=
+            `
                     </div>
                 </div>
             </a>

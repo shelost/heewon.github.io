@@ -84,7 +84,6 @@ let loop = () => {
     for (let i = 0; i < Class('hoverable').length; i++) {
         let div = Class('hoverable')[i]
         let rect = div.getBoundingClientRect()
-        div.style.border = '2px solid white'
         if (hover(rect.x, rect.y, rect.width, rect.height)) {
             hovering = div
         }
@@ -164,23 +163,17 @@ let loop = () => {
             let r = 30+20*i
 
             btx.globalAlpha = 0.3 - 0.1 * i
+            btx.globalAlpha = 0.1
             btx.lineWidth = 3;
             btx.lineCap = 'round'
             //btx.fillStyle = 'black'
 
-            if (hovering) {
-                btx.globalAlpha = 1;
-                btx.strokeStyle = 'red'
-                let rect = hovering.getBoundingClientRect()
-                //btx.strokeRect(rect.x,rect.y,rect.width,rect.height)
-                hovering.style.border = '2px solid #ffce00'
-            } else {
                 btx.strokeStyle = 'black'
                 btx.beginPath()
-                btx.arc(c[0], c[2], r, a, a + Math.PI * 1.8)
-                btx.stroke()
+                btx.arc(c[0], c[2], r, 0, Math.PI*2)
+                //btx.stroke()
+                btx.fill()
                 btx.closePath()
-            }
            // ctx.fill()
 
         }

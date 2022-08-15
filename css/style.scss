@@ -78,7 +78,7 @@ a{
         #title{
             padding: 30px 40px 50px 40px;
             border-radius: 25px;
-            box-shadow: 0 5px 15px rgba(black, 0.05);
+            //box-shadow: 0 5px 15px rgba(black, 0.05);
         }
 
         h1{
@@ -120,7 +120,7 @@ a{
             }
 
             .logo{
-                height: 26px;
+                height: 22px;
                 margin-right: 5px;
                 margin-top: 2px;
                 border-radius: 5px;
@@ -209,7 +209,7 @@ a{
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 1;
+        z-index: -1;
         pointer-events: none;
         //background-color: red;
     }
@@ -347,6 +347,7 @@ a{
         margin-top: 30px;
         margin-bottom: 30px;
         h1{
+            //font-weight: 400;
             font-size: 22px;
             margin: 0;
         }
@@ -381,11 +382,11 @@ a{
         transition: 0.2s ease;
         margin: 8px;
         border-radius: 15px;
-        background: white;
-        box-shadow: 0 5px 10px rgba(black, 0.1);
-        backdrop-filter: blur(10px);
-        //mix-blend-mode: hue;
-        border: 2px solid white;
+        background: rgba(white, 0.8);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(black, 0.1);
+
+        //box-shadow: 0 5px 10px rgba(black, 0.1);
 
         .img{
             width: 100%;
@@ -398,43 +399,84 @@ a{
             border-radius: 13px 13px 0 0;
         }
         .expo{
-            margin-top: 8px;
-            padding-bottom: 15px;
-            text-align: center;
-            height: 70px;
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            //text-align: center;
+            height: 65px;
             display: flex;
             flex-direction: column;
             //justify-content: center;
             justify-content: flex-start;
-            align-items: center;
-
+            //align-items: center;
             .name{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                //justify-content: center;
+                margin-bottom: 5px;
                 h1{
-                    margin: 5px;
-                    font-size: 16px;
-                    font-weight: 700;
+                    margin: 0;
+                    margin-right: 5px;
+                    font-size: 20px;
+                    font-weight: 800;
                     transition: 0.2s ease;
-
                 }
                 span{
                     font-size: 16px;
                     color: #0074ff;
                     border-radius: 20px;
                     margin-left: 2px;
+                    transform: translateY(1px);
                 }
             }
             p{
-                width: 90%;
                 margin: 0;
                 font-size: 13px;
                 color: rgba(black, 0.5);
             }
         }
+
+        .tags{
+            width: 90%;
+            display: flex;
+            align-items: flex-start;
+            margin: auto;
+            height: 40px;
+            .tag{
+                display: flex;
+                align-items: center;
+                position: relative;
+                //background: rgba(#5d00ff, 0.1);
+                //padding: 5px 8px 5px 8px;
+                border-radius: 5px;
+                margin-right: 10px;
+                background: rgba(#5d00ff, 0.05);
+                padding: 3px;
+                span{
+                    font-size: 18px;
+                    //border: 1px solid rgba(#5d00ff, 1);
+                    border-radius: 5px;
+                    color: #5d00ff;
+                }
+                p{
+                    opacity: 0;
+                    display: none;
+                    letter-spacing: 0.2px;
+                    font-weight: 500;
+                    font-size: 11px;
+                    margin: 0px;
+                    color: #5d00ff;
+                }
+                &:hover{
+                    p{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
         &:hover{
-            box-shadow: 0 10px 20px rgba(black, 0.15);
+            box-shadow: 0 10px 20px rgba(black, 0.1);
             transform: translateY(-5px);
             .img{
                 background-size: 105%;
@@ -693,8 +735,9 @@ a{
     }
 
     .item{
-        width: 80vw;
-        box-shadow: 0 5px 10px rgba(black, 0.1);
+        width: 90vw;
+        //box-shadow: 0 5px 10px rgba(black, 0.1);
+        border: 1px solid rgba(black, 0.1);
         border-radius: 15px;
         transition: 0.2s ease;
 
@@ -709,33 +752,72 @@ a{
             transition: 0.2s ease;
         }
         .expo{
-            margin-top: 10px;
             padding-bottom: 20px;
-            text-align: center;
+            width: 90%;
+            margin: auto;
+            margin-top: 15px;
+            height: 50px;
             .name{
                 display: flex;
                 align-items: center;
-                justify-content: center;
                 h1{
                     font-weight: 900;
-                    margin: 3px;
                     font-size: 20px;
-                    font-weight: 700;
-                    transition: 0.2s ease;
-
+                    margin: 0;
                 }
                 span{
                     font-size: 20px;
                     color: #0074ff;
                     border-radius: 20px;
-                    margin-left: 2px;
-                    margin-top: 1px;
+                    margin-top: 2px;
+                    margin-left: 8px;
                 }
             }
             p{
                 margin: 0;
+                margin-top: 5px;
                 font-size: 15px;
+                color: rgba(black, 0.5);
             }
+        }
+        .tags{
+            width: 90%;
+            display: flex;
+            align-items: flex-start;
+            margin: auto;
+            height: 40px;
+            .tag{
+                display: flex;
+                align-items: center;
+                position: relative;
+                //background: rgba(#5d00ff, 0.1);
+                //padding: 5px 8px 5px 8px;
+                border-radius: 5px;
+                margin-right: 10px;
+                background: rgba(#5d00ff, 0.05);
+                padding: 3px;
+                span{
+                    font-size: 18px;
+                    //border: 1px solid rgba(#5d00ff, 1);
+                    border-radius: 5px;
+                    color: #5d00ff;
+                }
+                p{
+                    opacity: 0;
+                    display: none;
+                    letter-spacing: 0.2px;
+                    font-weight: 500;
+                    font-size: 11px;
+                    margin: 0px;
+                    color: #5d00ff;
+                }
+                &:hover{
+                    p{
+                        opacity: 1;
+                    }
+                }
+            }
+
         }
         &:hover{
             .img{
