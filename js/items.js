@@ -6,8 +6,16 @@ let DATA =
         items:
         [
             {
+                name: 'Brand Redesigns',
+                blurb: 'My takes on some iconic logos.',
+                href: './@/redesigns',
+                img: 'redesigns',
+                tags: ['Illustrator', 'Gallery'],
+                active: false,
+            },
+            {
                 name: 'Arcaide 2',
-                blurb: 'The new & improved version of Arcaide.',
+                blurb: 'Superpowering ARC annotation.',
                 href: 'https://shelost.github.io/arcaide2',
                 img: 'arcaide-2',
                 tags: ['Research', 'HTML', 'JS', 'CSS'],
@@ -29,49 +37,10 @@ let DATA =
                 tags: ['Game', 'JS'],
                 active: true,
             },
-            {
-                name: 'Eleven Rooms',
-                blurb: 'Rooms, doors, and monsters.',
-                href: 'https://shelost.github.io/11rooms',
-                img: 'rooms',
-                tags: ['Game', 'JS'],
-                active: true,
-            },
-        ]
-    },
-     {
-        title: 'I like to make web apps & sites.',
-        blurb: `I've worked for everyone from personal clients to startups.`,
-        items:
-        [
-            {
-                name: 'WOLF Financial',
-                blurb: 'Website for fintech company.',
-                href: 'https://wolf.financial',
-                img: 'wolf',
-                tags: ['HTML', 'CSS'],
-                active: false,
-            },
-            {
-                name: 'Stephen Todd Walker',
-                blurb: 'Personal site for finance author.',
-                href: 'https://stephentoddwalker.com',
-                img: 'stw',
-                tags: ['HTML', 'CSS'],
-                active: false,
-            },
-            {
-                name: 'Blaxbaum',
-                blurb: 'Website for student consulting firm.',
-                href: 'https://blaxbaum.com',
-                img: 'blaxbaum',
-                tags: ['HTML', 'CSS'],
-                active: false,
-            },
         ]
     },
     {
-        title: 'I also make games...',
+        title: 'I started out making online games.',
         blurb: 'From HTML to Android.',
         items:
         [
@@ -122,6 +91,37 @@ let DATA =
                 img: 'platformr2',
                 tags: ['Game', 'JS', 'Android'],
                 active: true,
+            },
+        ]
+    },
+    {
+        title: 'I also make web apps & sites...',
+        blurb: `I've worked for everyone from personal clients to startups.`,
+        items:
+        [
+            {
+                name: 'WOLF Financial',
+                blurb: 'Website for fintech company.',
+                href: 'https://wolf.financial',
+                img: 'wolf',
+                tags: ['HTML', 'CSS'],
+                active: false,
+            },
+            {
+                name: 'Stephen Todd Walker',
+                blurb: 'Personal site for finance author.',
+                href: 'https://stephentoddwalker.com',
+                img: 'stw',
+                tags: ['HTML', 'CSS'],
+                active: false,
+            },
+            {
+                name: 'Blaxbaum',
+                blurb: 'Website for student consulting firm.',
+                href: 'https://blaxbaum.com',
+                img: 'blaxbaum',
+                tags: ['HTML', 'CSS'],
+                active: false,
             },
         ]
     },
@@ -194,7 +194,7 @@ let DATA =
         [
             {
                 name: 'Arcaide 2',
-                blurb: 'The new & improved version of Arcaide.',
+                blurb: 'Superpowering ARC annotation.',
                 href: 'https://shelost.github.io/arcaide2',
                 img: 'arcaide-2',
                 tags: ['Research', 'HTML', 'JS', 'CSS'],
@@ -390,7 +390,7 @@ let PAGES = {
 
     redesigns: {
         title: 'Brand Redesigns',
-        blurb: `I designed the logo for our high school Science Olympiad team.`,
+        blurb: `This is just what I would do if I was ever made the CEO of any of these companies.`,
         tags: ['Adobe Illustrator'],
         size: 5,
         elems:
