@@ -101,3 +101,16 @@ Id('contact').onclick = () => {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
+
+//Id('progress').style.width = (window.scrollY / window.scrollHeight) * 96 + "vw"
+
+
+
+let loop2 = () => {
+
+    Id('progress').style.width = (window.scrollY / document.documentElement.scrollHeight)*1.2*96+"vw"
+
+
+    window.requestAnimationFrame(loop2)
+}
+window.requestAnimationFrame(loop2)

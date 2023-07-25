@@ -37,6 +37,14 @@ let DATA =
                 tags: ['Game', 'JS'],
                 active: true,
             },
+            {
+                name: 'Stan (Landing Page)',
+                blurb: 'Landing page for creator startup',
+                href: 'https://stan.store',
+                img: 'platformr',
+                tags: ['HTML', 'CSS', 'JS'],
+                active: true,
+            },
         ]
     },
     {
@@ -275,6 +283,16 @@ let DATA =
         ]
     }
 ]
+
+
+
+//
+
+
+
+
+
+///
 
 
 let PAGES = {
@@ -579,3 +597,231 @@ let PAGES = {
 }
 
 let PAGE = PAGES.brain
+
+
+
+
+/////////////////////////////////////////////
+
+
+
+let tk =
+[
+    {
+        title: 'Projects',
+        blurb: 'From HTML to Android.',
+        items:
+        [
+            {
+                name: 'Wordchain',
+                blurb: 'A cool little word game.',
+                href: 'https://shelost.github.io/wordchain',
+                img: 'wordchain-22',
+                tags: ['Game', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'Platformr',
+                blurb: 'A platformer game with a twist.',
+                href: 'https://shelost.github.io/platformr',
+                img: 'platformr',
+                tags: ['Game', 'JS'],
+                active: true,
+            },
+            {
+                name: 'Eleven Rooms',
+                blurb: 'Rooms, doors, and monsters.',
+                href: 'https://shelost.github.io/11rooms',
+                img: 'rooms',
+                tags: ['Game', 'JS'],
+                active: true,
+            },
+            {
+                name: 'Just Orbiting By',
+                blurb: 'Orbital hijinks.',
+                href: 'https://shelost.github.io/orbiting',
+                img: 'orbiting',
+                tags: ['Game', 'JS'],
+                active: true,
+            },
+            {
+                name: 'Trails',
+                blurb: 'Sort of like Snake.',
+                href: 'https://shelost.github.io/trails',
+                img: 'trails',
+                tags: ['Game', 'JS'],
+                active: true,
+            },
+            {
+                name: 'Platformr Android',
+                blurb: 'A platformer game in the Play Store.',
+                href: 'https://play.google.com/store/apps/details?id=com.heewon.platformr&hl=en_US&gl=US',
+                img: 'platformr2',
+                tags: ['Game', 'JS', 'Android'],
+                active: true,
+                },
+                {
+                    name: 'WOLF Financial',
+                    blurb: 'Website for fintech company.',
+                    href: 'https://wolf.financial',
+                    img: 'wolf',
+                    tags: ['HTML', 'CSS'],
+                    active: false,
+                },
+                {
+                    name: 'Stephen Todd Walker',
+                    blurb: 'Personal site for finance author.',
+                    href: 'https://stephentoddwalker.com',
+                    img: 'stw',
+                    tags: ['HTML', 'CSS'],
+                    active: false,
+                },
+                {
+                    name: 'Blaxbaum',
+                    blurb: 'Website for student consulting firm.',
+                    href: 'https://blaxbaum.com',
+                    img: 'blaxbaum',
+                    tags: ['HTML', 'CSS'],
+                    active: false,
+                },
+                {
+                    name: 'Brand Redesigns',
+                    blurb: 'My takes on some iconic logos.',
+                    href: './@/redesigns',
+                    img: 'redesigns',
+                    tags: ['Illustrator', 'Gallery'],
+                    active: false,
+                },
+                {
+                    name: 'Brain Team',
+                    blurb: 'Branding + posters for Quiz Bowl team.',
+                    href: './@/brain',
+                    img: 'img/brainteam',
+                    tags: ['Illustrator'],
+                    active: false,
+                },
+                {
+                    name: 'NYBC',
+                    blurb: 'Poster + tickets for concert.',
+                    href: './@/nybc',
+                    img: 'img/nybc',
+                    tags: ['Illustrator'],
+                    active: false,
+                },
+                {
+                    name: 'Science Olympiad',
+                    blurb: 'Branding for SciOly Team.',
+                    href: './@/scioly',
+                    img: 'img/scioly',
+                    tags: ['Illustrator'],
+                    active: false,
+                },
+                {
+                    name: 'Ithaca Paintball',
+                    blurb: 'Branding for local business.',
+                    href: './@/paintball',
+                    img: 'img/paintball',
+                    tags: ['Illustrator'],
+                    active: false,
+                },
+                {
+                    name: 'The Heewon Flower',
+                    blurb: 'My original origami formula.',
+                    href: './@/origami',
+                    img: 'img/origami',
+                    tags: ['Origami'],
+                active: false,
+                },
+
+        ]
+    },
+
+
+    {
+        title: 'Recently, I\'ve been working in a research lab.',
+        blurb: 'These are the web apps I created for my research work with Prof. Kevin Ellis @ Cornell University.',
+        items:
+        [
+            {
+                name: 'Arcaide 2',
+                blurb: 'Superpowering ARC annotation.',
+                href: 'https://shelost.github.io/arcaide2',
+                img: 'arcaide-2',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'Arcaide',
+                blurb: 'An object annotation interface for ARC.',
+                href: 'https://shelost.github.io/arcaide',
+                img: 'arcaide',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: false,
+            },
+            {
+                name: 'MARC',
+                blurb: 'A new AI benchmark dataset.',
+                href: 'https://shelost.github.io/marc',
+                img: 'marc',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'MARC Corpus',
+                blurb: 'The list of MARC problems.',
+                href: 'https://shelost.github.io/marc/@/view',
+                img: 'corpus',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'MARC Solutions',
+                blurb: 'The list of MARC solutions.',
+                href: 'https://shelost.github.io/marc/@/review',
+                img: 'solutions',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'MARC Creator',
+                blurb: 'Create new problems.',
+                href: 'https://shelost.github.io/marc/@/svg',
+                img: 'create',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+             {
+                name: 'MARC Solver',
+                blurb: 'Solve problems.',
+                href: 'https://shelost.github.io/marc/@/draw',
+                img: 'solve',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: true,
+            },
+            {
+                name: 'Grid Cryptography',
+                blurb: '4 grid-based cryptography algorithms',
+                href: 'https://shelost.github.io/ellis/$/grid-crypt',
+                img: 'crypto',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: false,
+            },
+            {
+                name: 'Grid Display',
+                blurb: '4 grid-based puzzle games.',
+                href: 'https://shelost.github.io/ellis/$/grid-display',
+                img: 'grid',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: false,
+            },
+             {
+                name: 'Drawing Paths',
+                blurb: 'Path-based puzzle verification.',
+                href: 'https://shelost.github.io/ellis/$/draw',
+                img: 'paths',
+                tags: ['Research', 'HTML', 'JS', 'CSS'],
+                active: false,
+            }
+        ]
+    }
+]
