@@ -1,0 +1,338 @@
+html{
+    cursor: default;
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+
+}
+
+img{
+    width: 100%;
+    transform: scale(1.05);
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    //box-shadow: 0 10px 30px rgba(black, 0.05);
+}
+
+body{
+    font-family: Inter, Manrope, sans-serif;
+    letter-spacing: -0.2px;
+    margin: 0;
+    background: black;
+}
+
+#navbar{
+   // height: 300px;
+    width: 100vw;
+    height: fit-content;
+
+
+    #banner{
+        width: 100vw;
+        aspect-ratio: 2.5;
+        background: red;
+        background-size: cover;
+        position: relative;
+        z-index: -2;
+    }
+
+    #header{
+        color: white;
+        text-align: center;
+        position: fixed;
+        top: 10vw;
+        width: 50vw;
+        left: 25vw;
+        z-index: -1;
+        img{
+            width: 100px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+/*
+#header{
+    padding-bottom: 40px;
+    img{
+        margin-bottom: 20px;
+    }
+}
+*/
+
+
+
+h1{
+    font-family: 'Source Serif 4', Newsreader, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 95%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Source Serif 4', Newsreader, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: -0.4px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+p{
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+    margin-bottom: 25px;
+}
+
+a{
+    font-weight: 600;
+    background-color: rgba(#0099ff, 0.2);
+    padding: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    i{
+        font-weight: 400;
+    }
+    &:hover{
+        background-color: rgba(#0099ff, 0.3);
+    }
+}
+
+span{
+    font-weight: 600;
+    background-color: rgba(#ffce00, 0.2);
+    padding: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+
+table{
+    width: 100%;
+    //border: 1px solid rgba(black, 0.2);
+    border-radius: 5px;
+    margin: 50px 0;
+   //box-shadow: 0 15px 40px rgba(black, 0.1);
+    //padding: 20px;
+    //transform: scale(1.05) translate(-5px, 20px);
+
+    .header{
+        td{
+            //background: rgba(black, 0.03);
+        }
+        h2{
+            font-size: 28px;
+            font-weight: 300;
+            font-style: normal;
+            text-align: center;
+        }
+    }
+
+    .title{
+
+        background-color: rgba(#0074ff, 0.08);
+        border-radius: 8px;
+
+
+        td{
+            padding: 20px;
+
+            &:first-child{
+                border: none;
+            }
+        }
+
+        h4{
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 8px;
+            background-color: rgba(#0074ff, 0.15);
+            color: black;
+            padding: 5px 10px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+
+        h5{
+            font-family: 'Source Serif 4', Newsreader, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: italic;
+            text-align: center;
+            margin: 0;
+            letter-spacing: -0.1px;
+
+        }
+    }
+
+
+    td{
+        padding: 30px 0px;
+        vertical-align: top;
+
+        width: 100%;
+
+        img{
+            width: 380px;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0px 5px 25px rgba(black, 0.1);
+            border: 1px solid white;
+            transform: none;
+        }
+
+        &:first-child{
+            padding-right: 15px;
+            //border-right: 2px solid rgba(#ffce00, 0.2);
+            //background: rgba(#ffce00, 0.03);
+            h3{
+                border-bottom: 1px solid rgba(#ffce00, 0.8);
+            }
+        }
+
+        &:last-child{
+            padding-left: 15px;
+            //background: rgba(#ff0000, 0.03);
+            h3{
+                border-bottom: 1px solid rgba(#ff0000, 0.3);
+            }
+        }
+    }
+
+
+    h3{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+
+        i{
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+    p{
+        margin: 10px 0 15px 0;
+        font-size: 12px;
+    }
+    i{
+        background: rgba(#ff0000, 0.08);
+        padding: 1px;
+        margin-right: 2px;
+    }
+}
+
+.section{
+    padding: 30px 0;
+    h2{
+        border-bottom: 1px solid rgba(black, 0.15);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+ul{
+    padding-inline-start: 15px;
+
+    li{
+        margin-bottom: 35px;
+    }
+
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    b{
+        font-weight: 700;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    i{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+
+@media screen and (min-width: 800px){
+
+    #container{
+        background: white;
+        width: 100vw;
+    }
+    #main{
+        width: 100vw;
+        max-width: 800px;
+        padding: 50px;
+        padding-bottom: 80px;
+        margin: auto;
+        overflow: hidden;
+        background: white;
+    }
+
+    #table{
+        //overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #main{
+        width: 100vw;
+        padding: 0px;
+        padding-bottom: 80px;
+        margin: 0;
+        overflow: hidden;
+        background: white;
+    }
+    table{
+        transform: none;
+    }
+
+
+    #header{
+        margin: 40px 20px;
+
+        h1{
+            line-height: 110%;
+        }
+    }
+
+    #table{
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        overflow-x: scroll;
+    }
+}
+
+
