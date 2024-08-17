@@ -525,7 +525,7 @@ table{
 
     #menu{
         position: fixed;
-        top: 300px;
+        top: calc(50vh - 60px);
         right: 0;
         height: 120px;
         width: 120px;
@@ -543,6 +543,9 @@ table{
             color: rgba(black, 0.3);
             transition: 0.2s ease;
             cursor: pointer;
+            &.active{
+                color: black;
+            }
             &:hover{
                 color: rgba(black, 0.75);
             }
@@ -551,14 +554,34 @@ table{
 }
 
 @media screen and (max-width: 800px){
+
+    /*
+    body{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+        */
+
+
     #main{
         width: 100vw;
+        height: 100vh;
         padding: 0px;
         padding-bottom: 80px;
-        padding-top: 20px;
         margin: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         background: white;
+        margin: 0;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 0;
     }
 
     p{
@@ -571,12 +594,72 @@ table{
         }
     }
 
-    #header{
-        margin: 40px 20px;
+    #navbar{
+        //display: none;
 
-        h1{
-            line-height: 110%;
+        #banner{
+            z-index: 10 !important;
         }
+
+        .statue{
+            display: none;
+        }
+
+
+
+        #header{
+            width: 100vw;
+            height: 50vh;
+            padding: 0;
+            margin: 0;
+            background: black;
+            display: block !important;
+            color: white;
+            text-align: left;
+
+            h1{
+                line-height: 95%;
+            }
+        }
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #banner{
+       // display: none;
+    }
+
+
+    h1{
+        &.title{
+            position: sticky !important;
+            top: 0;
+            left: 0;
+            background: white;
+            margin: 0;
+            padding: 18px 20px;
+            width: 100vw;
+            font-weight: 700;
+            font-size: 22px;
+            border-bottom: 1px solid rgba(black, 0.1);
+
+            &:first-child{
+                margin-top: 200px;
+            }
+
+            &::before{
+                content: none;
+                height: 0;
+            }
+            &::after{
+                content: none;
+                height: 0;
+            }
+        }
+
+
     }
 
     #table{

@@ -5,6 +5,7 @@ const V = Id('voltaire')
 const H = Id('header')
 const M = Id('mast')
 const Q = Id('qing')
+const N = Id('menu')
 
 let Ts = 0
 let Vs = -120
@@ -17,13 +18,36 @@ let Vr = V.getBoundingClientRect()
 
 Resize()
 
+let coords = []
+
+for (i = 0; i < Class('anchor').length; i++){
+    let title = Class('anchor')[i]
+    let menu = Class('menu_item')[i]
+
+    coords.push(title.getBoundingClientRect().top + window.scrollY)
+
+
+    menu.onclick = () => {
+
+        let id = menu.id.substring(1)
+
+        console.log(title, title.getBoundingClientRect())
+
+        console.log(title)
+
+        window.scrollTo({
+            left: 0,
+            top: title.getBoundingClientRect().top + window.scrollY,
+            behavior: 'smooth'
+        })
+
+    }
+}
+
+
+
 function Resize() {
     let ratio = window.scrollY / window.screen.height
-
-
-    for (i = 0; i < Class('title').length; i++){
-        let title = Class('title')[i]
-    }
 
 
     if (window.screen.width > 800) {
@@ -43,7 +67,9 @@ function Resize() {
             M.style.opacity = 1-ratio*2
 
             Q.style.transform = `scale(${1 - ratio/4})`
-            Q.style.opacity = 1-ratio*2
+            Q.style.opacity = 1 - ratio * 2
+
+            N.style.opacity = ratio * 2 - 0.5
         }
     }
 
@@ -51,3 +77,30 @@ function Resize() {
 
 window.addEventListener('scroll', Resize)
 window.addEventListener('resize', Resize)
+
+
+window.onscroll = () => {
+
+    for (let i = 0; i < coords.length; i++){
+        let coord = coords[i]
+        if (i < coords.length - 1) {
+            let next = coords[i + 1]
+            console.log(coord, next)
+            if (coord < window.scrollY && window.scrollY < next) {
+                for (let i = 0; i < Class('menu_item').length; i++){
+                    let item = Class('menu_item')[i]
+                    item.classList.remove('active')
+                }
+                Class('menu_item')[i].classList.add('active')
+            }
+        } else {
+            if (coord < window.scrollY) {
+                for (let i = 0; i < Class('menu_item').length; i++){
+                    let item = Class('menu_item')[i]
+                    item.classList.remove('active')
+                }
+                Class('menu_item')[i].classList.add('active')
+            }
+        }
+    }
+}

@@ -456,7 +456,7 @@ table i {
   }
   #menu {
     position: fixed;
-    top: 300px;
+    top: calc(50vh - 60px);
     right: 0;
     height: 120px;
     width: 120px;
@@ -474,19 +474,37 @@ table i {
     transition: 0.2s ease;
     cursor: pointer;
   }
+  #menu h4.active {
+    color: black;
+  }
   #menu h4:hover {
     color: rgba(0, 0, 0, 0.75);
   }
 }
 @media screen and (max-width: 800px) {
+  /*
+  body{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+      */
   #main {
     width: 100vw;
+    height: 100vh;
     padding: 0px;
     padding-bottom: 80px;
-    padding-top: 20px;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background: white;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
   p {
     padding: 0 20px;
@@ -494,11 +512,50 @@ table i {
   td p {
     padding: 0;
   }
-  #header {
-    margin: 40px 20px;
+  #navbar #banner {
+    z-index: 10 !important;
   }
-  #header h1 {
-    line-height: 110%;
+  #navbar .statue {
+    display: none;
+  }
+  #navbar #header {
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    background: black;
+    display: block !important;
+    color: white;
+    text-align: left;
+  }
+  #navbar #header h1 {
+    line-height: 95%;
+  }
+  #menu {
+    display: none;
+  }
+  h1.title {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    background: white;
+    margin: 0;
+    padding: 18px 20px;
+    width: 100vw;
+    font-weight: 700;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  h1.title:first-child {
+    margin-top: 200px;
+  }
+  h1.title::before {
+    content: none;
+    height: 0;
+  }
+  h1.title::after {
+    content: none;
+    height: 0;
   }
   #table {
     width: calc(100vw - 40px);
