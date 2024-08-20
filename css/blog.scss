@@ -177,19 +177,31 @@ h3{
 
 p{
     font-size: 14px;
-    line-height: 150%;
+    line-height: 155%;
     font-weight: 400;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.18px;
     margin-bottom: 32px;
+    //font-family: Libre Baskerville, Manrope, sans-serif;
     b{
         font-weight: 600;
+    }
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Noto Serif JP', Manrope, sans-serif;
+    line-height: 170%;
+    letter-spacing: -0.12px;
+    font-weight: 500;
+    b{
+        font-weight: 900;
     }
 }
 
 a{
     font-weight: 600;
     background-color: rgba(#0099ff, 0.03);
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     //border-radius: 2px;
     text-decoration: none;
     color: black;
@@ -292,6 +304,11 @@ table{
 
         width: 100%;
 
+        h3{
+            font-family: 'Noto Serif JP', sans-serif;
+            font-weight: 900;
+        }
+
         img{
             width: 380px;
             border-radius: 8px;
@@ -306,6 +323,12 @@ table{
                 background: none !important;
                 margin: none !important;
                 color: black;
+            }
+        }
+
+        .quote{
+            h4{
+                font-size: 13px;
             }
         }
 
@@ -460,8 +483,9 @@ table{
         margin-bottom: 10px;
         color: rgba(black, 0.5);
     }
-    h3{
+    h4{
         font-size: 14px;
+        font-weight: 500;
         margin: 0;
     }
 }
