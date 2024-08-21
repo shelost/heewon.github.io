@@ -71,6 +71,11 @@ function Resize() {
 
             N.style.opacity = ratio * 2 - 0.5
         }
+    } else {
+
+        H.style.opacity = 1 - ratio * 2
+        T.style.opacity = 1 - ratio * 6
+        V.style.opacity = 1 - ratio * 3
     }
 
 }
