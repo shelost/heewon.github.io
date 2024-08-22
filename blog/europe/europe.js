@@ -6,6 +6,7 @@ const H = Id('header')
 const M = Id('mast')
 const Q = Id('qing')
 const N = Id('menu')
+const Sc = Id('scroll')
 
 let Ts = 0
 let Vs = -120
@@ -45,9 +46,10 @@ for (i = 0; i < Class('anchor').length; i++){
 }
 
 
-
 function Resize() {
     let ratio = window.scrollY / window.screen.height
+
+    Sc.style.opacity = 1 - ratio * 4
 
 
     if (window.screen.width > 800) {
@@ -70,12 +72,15 @@ function Resize() {
             Q.style.opacity = 1 - ratio * 2
 
             N.style.opacity = ratio * 2 - 0.5
+
+
         }
     } else {
 
         H.style.opacity = 1 - ratio * 2
         T.style.opacity = 1 - ratio * 6
         V.style.opacity = 1 - ratio * 3
+
     }
 
 }

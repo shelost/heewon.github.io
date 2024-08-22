@@ -71,11 +71,11 @@ body{
         left: 25vw;
         z-index: -1;
         h1{
-            font-family: 'Noto Serif JP', 'Source Serif 4', Newsreader, sans-serif;
-            font-size: 48px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            line-height: 105%;
+            font-family: 'Source Serif 4', Newsreader, sans-serif;
+            font-size: 52px;
+            font-weight: 700;
+            letter-spacing: -0.7px;
+            line-height: 95%;
             margin: 0;
             margin-bottom: 30px;
         }
@@ -102,49 +102,6 @@ body{
             width: 100px;
             margin-bottom: 40px;
         }
-    }
-}
-
-#scroll{
-    background: #ffe839;
-    position: fixed;
-    bottom: 30px;
-    left: calc(50vw - 50px);
-    width: 100px;
-    z-index: 11;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 10px 0;
-    border-radius: 20px;
-
-    animation: bobble 1s infinite alternate-reverse ease-in-out;
-
-    h2{
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        text-align: center;
-        margin: 0;
-    }
-    svg{
-        height: 16px;
-        width: 16px;
-        path{
-            stroke: black;
-        }
-    }
-}
-
-@keyframes bobble{
-    from{
-        transform: none;
-    }
-    to{
-        transform: translateY(8px);
     }
 }
 
@@ -269,7 +226,7 @@ a{
         background-color: rgba(#0099ff, 0.1);
     }
 }
-.table{
+table{
     a{
         padding: 1px;
         border-bottom: 1.5px solid rgba(#0059FF, 0.5);
@@ -295,14 +252,18 @@ u{
     border-bottom: 1px solid black;
 }
 
-.table{
+table{
+    //width: 100%;
+    //border: 1px solid rgba(black, 0.2);
     border-radius: 5px;
-    //margin: 140px 0;
-    //transform: scale(1.02) translate(-10px);
+    margin: 140px 0;
+   //box-shadow: 0 15px 40px rgba(black, 0.1);
+    //padding: 20px;
+    transform: scale(1.02) translate(-10px);
 
     .header{
-        .cell{
-            padding-bottom: 30px;
+        td{
+            //background: rgba(black, 0.03);
         }
         h2{
             font-size: 20px;
@@ -320,14 +281,19 @@ u{
     }
 
     .subtitle{
-        padding: 60px 0;
-        //border-top: 2px solid rgba(black, 0.05) !important;
-        //border-bottom: 2px solid rgba(black, 0.05) !important;
-        &:first-child{
-            border: none;
+
+        td{
+            padding: 40px 0 50px 0;
+            border-top: 2px solid rgba(black, 0.05) !important;
+            border-bottom: 2px solid rgba(black, 0.05) !important;
+
+            &:first-child{
+                border: none;
+            }
         }
 
         h4{
+
             font-size: 12px;
             font-weight: 500;
             text-align: center;
@@ -352,49 +318,25 @@ u{
     }
 
 
-    .row{
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        gap: 20px;
-    }
+    td{
+        padding: 20px 0px;
 
-    .cell{
-        padding: 0px 20px;
-        border-radius: 10px;
-        background: white;
-        box-shadow: 0 10px 20px rgba(black, 0.06);
-        overflow: hidden;
-        border: 2px solid white;
+        vertical-align: top;
 
-        .cell_title{
+
+        h3{
             font-family: 'Noto Serif JP', sans-serif;
             font-weight: 900;
-            padding: 12px 16px;
-
-            margin-bottom: 25px;
-
-
-            width: calc(100% + 15px);
-            margin-left: -20px;
-
-            i{
-                font-weight: 400;
-                font-size: 12px;
-            }
         }
 
+
         img{
-            width: 100%;
+            width: 380px;
             border-radius: 5px;
             margin-top: 20px;
-            box-shadow: 0px 5px 25px rgba(black, 0.12);
+            box-shadow: 0px 5px 25px rgba(black, 0.1);
             //border: 1px solid rgba(white, 0.25);
             transform: none;
-
-            &.light{
-                box-shadow: 0px 5px 25px rgba(black, 0.03);
-            }
         }
 
         a{
@@ -441,11 +383,12 @@ u{
         }
 
         &:first-child{
+            padding-right: 25px;
             //border-right: 2px solid rgba(#ffce00, 0.2);
             //background: rgba(#ffce00, 0.03);
-           // border-right: 2px solid rgba(black, 0.03);
-            .cell_title{
-                background: rgba(#ffce00, 0.15);
+            border-right: 2px solid rgba(black, 0.03);
+            h3{
+                background: rgba(#ffce00, 0.08);
                 //border-bottom: 3px solid rgba(#ffce00, 0.2);
             }
             i{
@@ -454,15 +397,38 @@ u{
         }
 
         &:last-child{
+            padding-left: 25px;
             //background: rgba(#ff0000, 0.03);
-            .cell_title{
-                background: rgba(red, 0.08);
+            h3{
+                background: rgba(red, 0.05);
 
                 //border-bottom: 3px solid rgba(#ff0000, 0.08);
             }
             span{
                 background :rgba(#ff0000, 0.05);
             }
+        }
+    }
+
+
+    h3{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        margin-left: -8px;
+        padding-bottom: 4px;
+        margin-bottom: 30px;
+        padding: 6px 8px;
+        border-radius: 2px;
+
+       // width: fit-content;
+
+       width: 100%;
+
+
+        i{
+            font-weight: 400;
+            font-size: 12px;
         }
     }
 
@@ -585,11 +551,6 @@ u{
 
 .chart{
     margin-top: 50px;
-
-    img{
-        box-shadow: 0 10px 30px rgba(black, 0.08);
-    }
-
     h2{
         margin: 30px 0;
         font-weight: 900;
@@ -725,6 +686,7 @@ u{
         }
 
 
+
         #header{
 
             display: flex;
@@ -808,101 +770,15 @@ u{
 
     }
 
-
-    ol{
-        padding-inline-start: 40px;
-    }
-
-    .quote{
-        margin: 30px 20px;
-        p{
-            padding: 0;
-        }
-    }
-
-    .prediction{
-        width: calc(100% - 40px);
-        padding: 20px 20px;
-        margin: 0;
-        margin-bottom: 30px;
-    }
-
-    .chart{
+    #table{
+        width: calc(100vw - 40px);
         padding: 0 20px;
+        overflow-x: scroll;
     }
 
-    .section{
-        border-top: 1px solid rgba(black, 0.05);
-        padding-top: 40px;
-        margin-top: 10px;
-        h2{
-            padding: 0 20px;
-            border: none;
-        }
-        .items{
-            .item{
-                padding: 25px;
-                margin: 20px 20px;
-                flex-direction: column;
-                gap: 10px;
-
-                .panel{
-                    width: 240px;
-                    border-radius: 120px;
-                    margin: auto;
-                }
-
-                p{
-                    padding: 0;
-                }
-            }
-        }
-    }
-
-    .table{
-        width: 90vw !important;
-        padding: 0 20px 40px 20px;
-
-        .row{
-            flex-direction: column;
-            overflow: visible;
-
-            &.header{
-                margin-top: 40px;
-                .cell{
-                    padding: 25px;
-                    img{
-                        margin: 0;
-                        margin-bottom: 20px;
-                        width: 100% !important;
-                    }
-                }
-
-            }
-
-            .cell{
-                padding: 0;
-                padding-bottom: 20px;
-
-
-                .cell_title{
-                    margin: 0;
-                    margin-bottom: 20px;
-                }
-
-                p{
-                    font-size: 13px;
-                }
-                img{
-                    margin: 0 20px;
-                    width: calc(100% - 40px) !important;
-                }
-
-                .timeline{
-                    margin-left: 20px;
-                }
-            }
-        }
+    table{
+        width: 500px !important;
+        padding: 0 20px;
 
         .subtitle{
             td{
@@ -918,7 +794,9 @@ u{
             }
         }
 
-
+        img{
+            width: 80vw !important;
+        }
     }
 }
 
