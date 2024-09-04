@@ -28,28 +28,3 @@
 
 }
 
-.list{
-
-    .row{
-        display: flex;
-        gap: 15px;
-
-        .portrait{
-            width: 80px;
-        }
-    }
-
-    h2{
-        font-size: 36px;
-        font-weight: 900;
-    }
-
-    p{
-        font-weight: 500;
-    }
-
-    li{
-        margin-bottom: 30px;
-    }
-
-}

@@ -30,6 +30,7 @@ body{
     overflow-x: hidden;
 }
 
+
 #navbar{
    // height: 300px;
     width: 100vw;
@@ -305,17 +306,22 @@ u{
 }
 
 .table{
-    border-radius: 5px;
+    border-radius: 10px;
     //margin: 140px 0;
     //transform: scale(1.02) translate(-10px);
 
     .header{
         .cell{
+            padding: 0;
             padding-bottom: 30px;
+
+            img{
+                border-radius: 8px 8px 0 0;
+            }
         }
         h2{
-            font-size: 20px;
-            font-weight: 800;
+            font-size: 24px;
+            font-weight: 900;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -635,6 +641,34 @@ u{
 }
 
 
+.list{
+
+    .row{
+        display: flex;
+        gap: 15px;
+
+        .portrait{
+            width: 80px;
+            height: 100px;
+        }
+    }
+
+    h2{
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    p{
+        font-weight: 500;
+    }
+
+    li{
+        margin-bottom: 30px;
+    }
+
+}
+
+
 
 @media screen and (min-width: 800px){
 
@@ -880,6 +914,7 @@ u{
 
             &.header{
                 margin-top: 40px;
+
                 .cell{
                     padding: 25px;
                     img{

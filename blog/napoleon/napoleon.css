@@ -7,21 +7,4 @@
 }
 #navbar .statue {
   height: 40vw;
-}
-.list .row {
-  display: flex;
-  gap: 15px;
-}
-.list .row .portrait {
-  width: 80px;
-}
-.list h2 {
-  font-size: 36px;
-  font-weight: 900;
-}
-.list p {
-  font-weight: 500;
-}
-.list li {
-  margin-bottom: 30px;
 }/*# sourceMappingURL=napoleon.css.map */
