@@ -44,6 +44,8 @@ body{
         position: relative;
         z-index: -2;
 
+
+        background-image: linear-gradient(to top, blue, black);
     }
 
     .statue{
@@ -97,6 +99,11 @@ body{
             b{
                 font-weight: 600;
             }
+        }
+
+        .korean{
+            font-size: 20px;
+            font-weight: 600;
         }
 
 

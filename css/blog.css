@@ -45,6 +45,7 @@ body {
   background-size: cover;
   position: relative;
   z-index: -2;
+  background-image: linear-gradient(to top, blue, black);
 }
 #navbar .statue {
   height: 30vw;
@@ -93,6 +94,10 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 #navbar #header h3 b {
+  font-weight: 600;
+}
+#navbar #header .korean {
+  font-size: 20px;
   font-weight: 600;
 }
 #navbar #header img {
