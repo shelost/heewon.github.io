@@ -45,7 +45,7 @@ body {
   background-size: cover;
   position: relative;
   z-index: -2;
-  background-image: linear-gradient(to top, blue, black);
+  background-image: linear-gradient(-10deg, rgba(255, 206, 0, 0.5), rgba(255, 206, 0, 0.1), black 50%);
 }
 #navbar .statue {
   height: 30vw;
@@ -76,17 +76,18 @@ body {
   letter-spacing: -1px;
   line-height: 105%;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 #navbar #header h2 {
   font-family: "Source Serif 4", Newsreader, sans-serif;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 100;
   font-style: italic;
   letter-spacing: -0.4px;
   margin: 0;
   margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.75);
 }
 #navbar #header h3 {
   font-size: 16px;
@@ -97,8 +98,10 @@ body {
   font-weight: 600;
 }
 #navbar #header .korean {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  display: none;
 }
 #navbar #header img {
   width: 100px;
