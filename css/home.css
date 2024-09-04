@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Noto Serif JP", sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+}
+
+.articles {
+  display: flex;
+  gap: 60px;
+  padding: 50px;
+}
+.articles .article {
+  width: 260px;
+  transition: 0.2s ease;
+}
+.articles .article .thumbnail {
+  width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+}
+.articles .article .expo h1 {
+  font-size: 24px;
+  line-height: 110%;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  transition: 0.2s ease;
+}
+.articles .article .expo h1 span {
+  color: black;
+}
+.articles .article .expo h2 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.05);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.articles .article .expo .flags {
+  display: flex;
+  gap: 5px;
+}
+.articles .article .expo .flags .flag {
+  width: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.articles .article:hover .expo h1 {
+  color: black;
+}/*# sourceMappingURL=home.css.map */
