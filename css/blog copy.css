@@ -1,0 +1,653 @@
+html {
+  cursor: default;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  background: #ffd900;
+  color: black;
+}
+
+::selection {
+  background: #ffd900;
+  color: black;
+}
+
+img {
+  width: 100%;
+  transform: scale(1.02);
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+body {
+  font-family: Inter, Manrope, sans-serif;
+  letter-spacing: -0.2px;
+  margin: 0;
+  background: black;
+  overflow-x: hidden;
+}
+
+#navbar {
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+#navbar #banner {
+  width: 100vw;
+  aspect-ratio: 2.25;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+#navbar .statue {
+  height: 30vw;
+  width: auto;
+  position: absolute;
+  bottom: -40px;
+}
+#navbar #terracotta {
+  height: 34vw;
+  left: -2vw;
+}
+#navbar #voltaire {
+  right: -8vw;
+}
+#navbar #header {
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 10vw;
+  width: 50vw;
+  left: 25vw;
+  z-index: -1;
+}
+#navbar #header h1 {
+  font-family: "Source Serif 4", Newsreader, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 95%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+#navbar #header h2 {
+  font-family: "Source Serif 4", Newsreader, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -0.4px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+#navbar #header h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+#navbar #header h3 b {
+  font-weight: 600;
+}
+#navbar #header img {
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+ol {
+  padding-inline-start: 20px;
+  margin-bottom: 40px;
+}
+ol li {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+ol li p {
+  margin: 10px 0;
+  font-weight: 700;
+  color: black;
+}
+
+h1 {
+  font-family: "Noto Serif JP", "Source Serif 4", Newsreader, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 95%;
+}
+h1.title {
+  position: sticky !important;
+  background: white;
+  top: 0px;
+  z-index: 3;
+  padding: 18px 50px 12px 50px;
+  width: 800px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  margin-left: -50px;
+}
+h1.title::after {
+  height: 30px;
+  width: 100%;
+  background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+h1.title::before {
+  height: 30px;
+  width: 100%;
+  background-image: linear-gradient(0deg, white, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+h1.title:last-child {
+  margin-top: 0px !important;
+  background: yellow !important;
+}
+
+h2 {
+  font-family: "Noto Serif JP", "Source Serif 4", Newsreader, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 160%;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin-bottom: 32px;
+}
+p b {
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Noto Serif JP", Manrope, sans-serif;
+  line-height: 170%;
+  letter-spacing: -0.12px;
+  font-weight: 500;
+}
+p b {
+  font-weight: 900;
+}
+
+a {
+  font-weight: 800;
+  background-color: rgba(0, 116, 255, 0.03);
+  padding-bottom: 0px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease;
+  border-bottom: 1.5px solid rgba(0, 89, 255, 0.4);
+  color: #000c50;
+}
+a i {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+a:hover {
+  color: black;
+  background-color: rgba(0, 153, 255, 0.1);
+}
+
+table a {
+  padding: 1px;
+  border-bottom: 1.5px solid rgba(0, 89, 255, 0.5);
+}
+table a i {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000c50 !important;
+}
+
+span {
+  font-weight: 800;
+  background-color: rgba(255, 206, 0, 0.1);
+  padding: 0 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+table {
+  border-radius: 5px;
+  margin: 140px 0;
+  transform: scale(1.02) translate(-10px);
+}
+table .header h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+table .header h4 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+table .subtitle td {
+  padding: 40px 0 50px 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.05) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05) !important;
+}
+table .subtitle td:first-child {
+  border: none;
+}
+table .subtitle h4 {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 12px;
+  background-color: rgba(0, 116, 255, 0.1);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+table .subtitle h5 {
+  font-family: "Noto Serif JP", Newsreader, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+table td {
+  padding: 20px 0px;
+  vertical-align: top;
+}
+table td h3 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: 900;
+}
+table td img {
+  width: 380px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  transform: none;
+}
+table td a i {
+  background: none !important;
+  margin: none !important;
+  color: black;
+}
+table td .quote h4 {
+  font-size: 13px;
+}
+table td .timeline {
+  border-left: 1.5px solid rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+  margin-top: 28px;
+}
+table td .timeline span {
+  font-style: italic;
+  padding-right: 4px;
+}
+table td .timeline p {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 28px;
+}
+table td .timeline p::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 6px;
+  height: 6px;
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+  background: white;
+  border-radius: 5px;
+}
+table td:first-child {
+  padding-right: 25px;
+  border-right: 2px solid rgba(0, 0, 0, 0.03);
+}
+table td:first-child h3 {
+  background: rgba(255, 206, 0, 0.08);
+}
+table td:last-child {
+  padding-left: 25px;
+}
+table td:last-child h3 {
+  background: rgba(255, 0, 0, 0.05);
+}
+table td:last-child span {
+  background: rgba(255, 0, 0, 0.05);
+}
+table h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: -8px;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+  padding: 6px 8px;
+  border-radius: 2px;
+  width: 100%;
+}
+table h3 i {
+  font-weight: 400;
+  font-size: 12px;
+}
+table p {
+  margin: 10px 0 20px 0;
+  font-size: 12.5px;
+}
+table b {
+  font-weight: 800;
+}
+table i {
+  padding: 1px;
+  margin-right: 2px;
+  font-weight: 600;
+}
+
+.section {
+  padding: 30px 0 50px 0;
+}
+.section h2 {
+  font-family: "Source Serif 4", Newsreader, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin: 0;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.section p i {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.section img {
+  width: 100%;
+}
+.section .items {
+  margin-bottom: 40px;
+}
+.section .items .item {
+  margin-bottom: 25px;
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 5px 25px 20px 25px;
+}
+.section .items .item .panel {
+  width: 140px;
+  border-radius: 100px;
+  transform: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border: 4px solid white;
+}
+.section .items .item h4 {
+  font-family: "Noto Serif JP", "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.section .items .item h4 a {
+  font-weight: 900;
+}
+.section .items .item span {
+  font-weight: 900;
+}
+.section .items .item p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.section .items .item p.sub {
+  color: rgba(0, 0, 0, 0.5);
+}
+.section .items .item b {
+  font-weight: 700;
+}
+.section .items .item b i {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.quote {
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.quote p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.quote h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+.chart {
+  margin-top: 50px;
+}
+.chart h2 {
+  margin: 30px 0;
+  font-weight: 900;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.chart h2 i {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
+}
+.chart p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.prediction {
+  background: rgba(162, 0, 255, 0.02);
+  border-bottom: 1px solid rgba(162, 0, 255, 0.1);
+  border-top: 1px solid rgba(162, 0, 255, 0.1);
+  padding: 15px 20px;
+  width: 800px;
+  margin-left: -20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.prediction b {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+  #container {
+    background: white;
+    width: 100vw;
+  }
+  #main {
+    width: 100vw;
+    max-width: 800px;
+    padding: 1px;
+    padding-bottom: 200px;
+    margin: auto;
+    background: white;
+  }
+  #menu {
+    position: fixed;
+    top: calc(50vh - 60px);
+    right: 0;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  #menu h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 0;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #menu h4.active {
+    color: black;
+  }
+  #menu h4:hover {
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (max-width: 800px) {
+  /*
+  body{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+      */
+  body {
+    background: white;
+  }
+  #container {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+  }
+  #main {
+    position: relative;
+    width: 100vw;
+    padding-top: 60vh;
+    background: white;
+  }
+  p {
+    padding: 0 20px;
+  }
+  td p {
+    padding: 0;
+  }
+  #navbar {
+    position: relative;
+  }
+  #navbar #banner {
+    z-index: 10 !important;
+  }
+  #navbar #header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+    padding: 30px;
+    margin: 0;
+    background: black;
+    color: white;
+    text-align: left;
+  }
+  #navbar #header #qing {
+    width: 72px;
+  }
+  #navbar #header h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 95%;
+  }
+  #navbar #terracotta {
+    height: 200px;
+    position: fixed;
+    bottom: -40px;
+  }
+  #navbar #voltaire {
+    height: 250px;
+    position: fixed;
+    bottom: -40px;
+  }
+  #menu {
+    display: none;
+  }
+  h1.title {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    background: white;
+    margin: 0;
+    padding: 18px 20px;
+    width: 100vw;
+    font-weight: 700;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  h1.title::before {
+    content: none;
+    height: 0;
+  }
+  h1.title::after {
+    content: none;
+    height: 0;
+  }
+  #table {
+    width: calc(100vw - 40px);
+    padding: 0 20px;
+    overflow-x: scroll;
+  }
+  table {
+    width: 500px !important;
+    padding: 0 20px;
+  }
+  table .subtitle td h4 {
+    margin: 0;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  table .subtitle td h5 {
+    text-align: left;
+    font-size: 18px;
+  }
+  table img {
+    width: 80vw !important;
+  }
+}/*# sourceMappingURL=blog copy.css.map */

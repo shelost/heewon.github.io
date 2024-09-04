@@ -1,0 +1,55 @@
+
+
+
+#navbar{
+
+    #banner{
+        background: #d63030;
+        background: linear-gradient(110deg, #3075d6, #000512 60%);
+    }
+
+
+    #qing{
+        width: 200px !important;
+    }
+
+    .statue{
+        height: 40vw;
+    }
+
+
+    #left{
+       // height: 35vw;
+    }
+
+    #right{
+       // height: 33vw;
+    }
+
+}
+
+.list{
+
+    .row{
+        display: flex;
+        gap: 15px;
+
+        .portrait{
+            width: 80px;
+        }
+    }
+
+    h2{
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    p{
+        font-weight: 500;
+    }
+
+    li{
+        margin-bottom: 30px;
+    }
+
+}

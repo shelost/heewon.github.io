@@ -1,0 +1,27 @@
+#navbar #banner {
+  background: #d63030;
+  background: linear-gradient(110deg, #3075d6, #000512 60%);
+}
+#navbar #qing {
+  width: 200px !important;
+}
+#navbar .statue {
+  height: 40vw;
+}
+.list .row {
+  display: flex;
+  gap: 15px;
+}
+.list .row .portrait {
+  width: 80px;
+}
+.list h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.list p {
+  font-weight: 500;
+}
+.list li {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=napoleon.css.map */
