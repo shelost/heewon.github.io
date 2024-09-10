@@ -11,76 +11,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+JP:wght@200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
     <link href = '../../css/home.css' rel = 'stylesheet'>
-    <base target="_blank" rel="noopener noreferrer">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/blog/favicon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/blog/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/blog/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/blog/favicon.svg" />
 </head>
 <body>
 
+    <div class = 'header'>
+
+        <img src = '../assets/blog/chancellor3.svg' id = 'logo' alt = 'The Chancellor Logo'>
+        <p> History · Politics · World Events </p>
+
+    </div>
+
+    <svg id = 'triangle' width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M960 58L0 0H1920L960 58Z" fill="#D9D9D9"/>
+    </svg>
 
     <div class = 'articles'>
 
-
-        <a href = '/blog/japan'>
+        <!--
+        <a href = '/blog/xi/kr' class = 'inactive'>
             <div class = 'article'>
-                <img src = '../assets/blog/thumbnail-4.png' class = 'thumbnail' alt = 'Thumbnail Image'>
+                <img src = '../assets/blog/thumbnail.png' class = 'thumbnail' alt = 'Thumbnail Image'>
                 <div class = 'expo'>
-                    <h1> <span>Japan</span>, the Land of the Setting Sun </h1>
-                    <h5 class = 'korean'> 해가 지지 않는 나라, 일본 </h5>
-                    <div class = 'flags'>
-                        <img src = '../assets/blog/japan.png' class = 'flag' alt = 'Flag Image'>
-                        <img src = '../assets/blog/britain.png' class = 'flag' alt = 'Flag Image'>
-                    </div>
-                    <h2> East Asian Politics </h2>
-                    <h3> September 2024 </h3>
-                </div>
-            </div>
-        </a>
-
-        <a href = '/blog/napoleon'>
-            <div class = 'article'>
-                <img src = '../assets/blog/thumbnail-3.png' class = 'thumbnail' alt = 'Thumbnail Image'>
-                <div class = 'expo'>
-                    <h1> <span>Napoleon</span>, the Korean Feminist </h1>
-                    <h5 class = 'korean'> 나폴레옹과 대한민국의 페미니즘 대혁명 </h5>
-                    <div class = 'flags'>
-                        <img src = '../assets/blog/korea.png' class = 'flag' alt = 'Flag Image'>
-                        <img src = '../assets/blog/france.png' class = 'flag' alt = 'Flag Image'>
-                    </div>
-                    <h2> East Asian Politics </h2>
-                    <h3> September 2024 </h3>
-                </div>
-            </div>
-        </a>
-
-        <a href = '/blog/xi'>
-            <div class = 'article'>
-                <img src = '../assets/blog/thumbnail-2.png' class = 'thumbnail' alt = 'Thumbnail Image'>
-                <div class = 'expo'>
-                    <h1> <span>Xi Jinping</span>, the Chinese Bismarck </h1>
-                    <h5 class = 'korean'> 시진핑, 중화(中華)의 비스마르크 </h5>
+                    <h1> 시진핑, 중화(中華)의 비스마르크 </h1>
                     <div class = 'flags'>
                         <img src = '../assets/blog/china.png' class = 'flag' alt = 'Flag Image'>
                         <img src = '../assets/blog/germany.png' class = 'flag' alt = 'Flag Image'>
                     </div>
-                    <h2> East Asian Politics </h2>
+                    <div class = 'tags'>
+                        <div class = 'tag'>
+                            <p>
+                                KR
+                            </p>
+                        </div>
+                        <div class = 'tag'>
+                            <p>
+                                East Asia
+                            </p>
+                        </div>
+                    </div>
+                    <h3> 2024년 9월 XX일 </h3>
+                </div>
+            </div>
+        </a>
+        -->
+
+        <a href = '/blog/xi'>
+            <div class = 'article'>
+                <div style = 'background-image: url("../assets/blog/thumbnail-2x.png")' class = 'thumbnail'></div>
+                <div class = 'expo'>
+                    <h4> East Asia </h4>
+                    <h1> <span>Xi Jinping</span>, the Chinese Bismarck </h1>
+                    <div class = 'flags'>
+                        <img src = '../assets/blog/china.png' class = 'flag' alt = 'Flag Image'>
+                        <img src = '../assets/blog/germany.png' class = 'flag' alt = 'Flag Image'>
+                    </div>
+                    <div class = 'tags'>
+                        <div class = 'tag'>
+                            <img src = '../assets/blog/clock.svg' class = 'icon' alt = 'Icon'>
+                            <p>
+                                15 min
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        The best historical parallel to Xi Jinping’s China in the 2020’s is not Chairman Mao,
+                        but in fact Otto von Bismarck’s German Imperial expansion in the 1870’s.
+                    </p>
                     <h3> September 2024 </h3>
                 </div>
             </div>
         </a>
 
-        <a href = '/blog/europe'>
+        <a href = '/blog/europe/kr'>
             <div class = 'article'>
-                <img src = '../assets/blog/thumbnail-1.png' class = 'thumbnail' alt = 'Thumbnail Image'>
+                <div style = 'background-image: url("../assets/blog/thumbnail.png")' class = 'thumbnail'></div>
                 <div class = 'expo'>
-                    <h1> Is Europe Falling Like the <span>Qing Dynasty</span>? </h1>
-                    <h5 class = 'korean'> 유럽의 몰락, 청나라의 선례 </h5>
+                    <h4> 세계정세 </h4>
+                    <h1> 유럽의 몰락, 청나라의 선례 </h1>
                     <div class = 'flags'>
                         <img src = '../assets/blog/qing.png' class = 'flag' alt = 'Flag Image'>
                         <img src = '../assets/blog/eu.png' class = 'flag' alt = 'Flag Image'>
                     </div>
-                    <h2> The Big Picture </h2>
-                    <h3> August 2024 </h3>
+                    <div class = 'tags'>
+                        <div class = 'tag'>
+                            <img src = '../assets/blog/clock.svg' class = 'icon' alt = 'Icon'>
+                            <p>
+                                15 min
+                            </p>
+                        </div>
+                    </div>
+                    <h3> 2024년 9월 XX일 </h3>
+                </div>
+            </div>
+        </a>
+
+
+        <a href = '/blog/europe'>
+            <div class = 'article'>
+                <div style = 'background-image: url("../assets/blog/thumbnail-1.png")' class = 'thumbnail'></div>
+                <div class = 'expo'>
+                    <h4> East Asia </h4>
+                    <h1> Is Europe Falling Like the <span>Qing Dynasty</span>? </h1>
+                    <div class = 'flags'>
+                        <img src = '../assets/blog/qing.png' class = 'flag' alt = 'Flag Image'>
+                        <img src = '../assets/blog/eu.png' class = 'flag' alt = 'Flag Image'>
+                    </div>
+                    <div class = 'tags'>
+                        <div class = 'tag'>
+                            <img src = '../assets/blog/clock.svg' class = 'icon' alt = 'Icon'>
+                            <p>
+                                15 min
+                            </p>
+                        </div>
+                    </div>
+                    <h3> August 24, 2024 </h3>
                 </div>
             </div>
         </a>

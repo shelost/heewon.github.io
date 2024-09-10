@@ -5,6 +5,11 @@ html {
 
 a {
   cursor: pointer;
+  white-space: nowrap;
+}
+
+sup {
+  line-height: 10%;
 }
 
 ::-moz-selection {
@@ -243,21 +248,22 @@ p b {
 a {
   font-weight: 800;
   background-color: rgba(0, 116, 255, 0.03);
-  padding-bottom: 0px;
   text-decoration: none;
   color: black;
   transition: 0.2s ease;
-  border-bottom: 1.5px solid rgba(0, 89, 255, 0.4);
+  border-bottom: 1.5px solid rgba(0, 89, 255, 0.2);
   color: #000c50;
 }
 a i {
   font-weight: 400;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  letter-spacing: -0.4px;
+  color: rgba(0, 12, 80, 0.6);
 }
 a:hover {
   color: black;
-  background-color: rgba(0, 153, 255, 0.1);
+  background-color: rgba(0, 116, 255, 0.06);
+  border-bottom: 1.5px solid rgba(0, 89, 255, 0.3);
 }
 
 .table a {
@@ -272,7 +278,7 @@ a:hover {
 
 span {
   font-weight: 800;
-  background-color: rgba(255, 206, 0, 0.1);
+  background-color: rgba(255, 206, 0, 0.08);
   padding: 0 2px;
   border-radius: 2px;
   text-decoration: none;
@@ -281,7 +287,7 @@ span {
 
 u {
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .table {
@@ -433,13 +439,23 @@ u {
 }
 .section h2 {
   font-family: "Source Serif 4", Newsreader, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
   letter-spacing: -0.4px;
   margin: 0;
   padding-bottom: 8px;
   margin-bottom: 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.section h2 i {
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+.section h2 sup {
+  font-size: 12px;
+  font-weight: 400;
 }
 .section p i {
   color: rgba(0, 0, 0, 0.5);
@@ -461,6 +477,25 @@ u {
   border-radius: 10px;
   padding: 5px 25px 20px 25px;
 }
+.section .items .item .category {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 0;
+  margin: 20px 0 15px 0;
+  line-height: 100%;
+  padding: 6px 8px;
+  border-radius: 20px;
+  font-style: italic;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section .items .item .br {
+  height: 5px;
+}
 .section .items .item .panel {
   width: 140px;
   border-radius: 100px;
@@ -476,6 +511,9 @@ u {
 }
 .section .items .item h4 a {
   font-weight: 900;
+}
+.section .items .item a i {
+  color: rgba(0, 12, 80, 0.5);
 }
 .section .items .item span {
   font-weight: 900;
