@@ -559,13 +559,14 @@ u{
                 font-size: 13px;
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
-                color: rgba(black, 0.4);
+                color: rgba(rgb(15, 5, 62), 0.5);
                 letter-spacing: -0.2px;
-                border: 1px solid rgba(black, 0.15);
+                //border: 1px solid rgba(black, 0.15);
+                background: rgba(rgb(15, 5, 62), 0.04);
                 margin: 0;
-                margin: 20px 0 15px 0;
+                margin: 20px 0 25px 0;
                 line-height: 100%;
-                padding: 6px 8px;
+                padding: 8px 10px;
                 border-radius: 20px;
                 font-style: italic;
                 width: fit-content;

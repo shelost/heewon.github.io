@@ -7,6 +7,7 @@ a{
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
+    background: #f31941;
 }
 
 h1{
@@ -15,22 +16,58 @@ h1{
     font-weight: 900;
 }
 
-
 .korean{
     display: none;
+}
+
+#navbar{
+    width: calc(100vw - 50px);
+    height: 40px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 15px;
+    background: white;
+    z-index: 4;
+    box-shadow: 0 10px 25px rgba(black, 0.2), inset 0 -5px 10px rgba(black, 0.08);
+    border: 2px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    h2{
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+    }
+    h3{
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: -0.12px;
+        transition: 0.2s ease;
+        &:hover{
+            color: #f31941;
+        }
+    }
+
+    #nav{
+        display: flex;
+        gap: 16px;
+    }
 }
 
 .header{
     background: #F42C50;
     background: #f31941;
-    padding: 80px 0 30px 0;
+    padding: 100px 0 20px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0px;
-
-    //border-top: 10px solid black;
     color: white;
 
     #logo{
@@ -65,14 +102,100 @@ h1{
     }
 }
 
+
+#main{
+    padding: 20px;
+    width: 94vw;
+    padding: 100px 3vw 60px 3vw;
+    margin-top: -75px;
+    background: white;
+    display: flex;
+    gap: 30px;
+}
+
+#notes{
+    width: 220px;
+
+    h2{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .notes{
+        .note{
+            width: calc(100% - 5px);
+            background: white;
+            height: fit-content;
+            position: relative;
+            box-shadow: 0 15px 20px rgba(black, 0.2);
+            border-radius: 10px;
+            margin: 12px 0;
+            border: 1px solid rgba(white, 0.1);
+            cursor: pointer;
+
+            .vertical{
+                border-radius: 8px;
+                width: 100%;
+                aspect-ratio: 0.75;
+                background-size: 100%;
+                background-position: 50% 50%;
+                transition: 0.2s ease;
+            }
+            .expo{
+                border-radius: 8px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 16px;
+                padding-top: 60px;
+                color: white;
+                background-image: linear-gradient(to top, black 50%, rgba(black, 0));
+            }
+            h2{
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: -0.1px;
+                margin: 0;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 11px;
+                font-weight: 300;
+                letter-spacing: 0px;
+                margin: 0;
+                margin-bottom: 2px;
+                color: rgba(white, 0.7);
+            }
+            h4{
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: -0.1px;
+                margin: 0;
+                margin-top: 10px;
+                color: rgba(white, 0.5);
+                display: none;
+            }
+
+            &:hover{
+                .vertical{
+                    background-size: 104%;
+                }
+            }
+        }
+    }
+}
+
 .articles{
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+
     margin: auto;
     gap: 20px;
-    padding: 20px;
-    padding-top: 40px;
+
+    flex: 1;
+
 
     a{
         flex: 1 0 calc(33% - 15px);
@@ -84,28 +207,70 @@ h1{
             flex: 1 0 calc(100% - 15px);
             .article{
                 display: flex;
-                gap: 25px;
+                gap: 24px;
                 .thumbnail{
                     width: 40%;
                     aspect-ratio: 16 / 9;
                     flex-shrink: 0;
                 }
                 .expo{
-                    margin-top: 8px;
+                    margin-top: 4px;
+                    h4{
+                        font-size: 14px;
+                    }
                     h1{
-                        font-size: 36px;
+                        font-size: 32px;
                         font-weight: 900;
                         letter-spacing: -1px;
                     }
                     h3{
                         margin-top: 20px;
                     }
+                    .blurb{
+                        font-size: 13px;
+                        display: block;
+                    }
                 }
             }
         }
 
         &.inactive{
-            display: none;
+            pointer-events: none;
+
+            position: relative;
+
+            .thumbnail{
+                opacity: 0.25;
+            }
+            .expo{
+                opacity: 0.4;
+
+                .tags{
+                    .tag{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:before{
+                //content: '⏱ ‎ Coming Soon';
+                position: absolute;
+                top: 90px;
+                left: calc(50% - 65px);
+                background-color: #f31941;
+                color: white;
+                padding: 10px 0;
+                width: 140px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: -0.15px;
+                border-radius: 50px;
+                color: rgba(white, 0.9);
+                box-shadow: 5px 10px 15px rgba(black, 0.4), -5px -5px 15px rgba(white, 0.7), inset -1px -2px 5px rgba(black, 0.2);
+                border: 1px solid rgba(white, 0.4);
+                z-index: 3;
+            }
         }
     }
 
@@ -156,14 +321,14 @@ h1{
         .expo{
             margin-top: 18px;
             h4{
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
-                letter-spacing: -0.3px;
+                letter-spacing: -0.25px;
                 margin: 0;
                 color: #ff3030;
             }
             h1{
-                font-size: 24px;
+                font-size: 18px;
                 line-height: 110%;
                 //color: rgba(black, 0.5);
                 margin: 5px 0 20px 0;
@@ -183,11 +348,11 @@ h1{
                 width: fit-content;
             }
             h3{
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 600;
                 letter-spacing: -0.32px;
                 margin: 0;
-                color: rgba(black, 0.4);
+                color: rgba(black, 0.35);
             }
             p{
                 font-family: 'Noto Serif JP', sans-serif;
@@ -196,14 +361,17 @@ h1{
                 letter-spacing: -0.18px;
                 margin: 0;
             }
+            .blurb{
+                display: none;
+            }
             .flags{
                 display: flex;
                 gap: 5px;
                 .flag{
-                    width: 32px;
-                    //border: 1px solid rgba(black, 0.1);
+                    width: 24px;
+                    border: 1px solid rgba(white, 1);
                     box-shadow: 0 2px 5px rgba(black, 0.1);
-                    border-radius: 2px;
+                    border-radius: 3.5px;
                 }
             }
         }
@@ -223,6 +391,73 @@ h1{
                 h1{
                     color: rgba(black, 1);
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+    html{
+        width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+
+    body{
+        width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    .header{
+        width: 100vw;
+        padding: 40px 0px 30px 0px;
+        #logo{
+            height: 80px;
+        }
+    }
+
+    #main{
+        flex-direction: column-reverse;
+        width: calc(100vw);
+        margin-top: -5.23vw;
+        padding: 0;
+        padding-bottom: 100px;
+        h2{
+            display: none;
+        }
+    }
+
+    .articles{
+        padding: 50px 20px 0 20px;
+        a{
+            &:first-child{
+                .article{
+                    flex-direction: column;
+                    .thumbnail{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #notes{
+        width: 100vw;
+        .notes{
+            width: calc(100% - 40px);
+            display: flex;
+            overflow-x: scroll;
+            gap: 15px;
+            padding: 20px;
+            .note{
+                width: 200px;
+                flex-shrink: 0;
             }
         }
     }

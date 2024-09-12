@@ -6,6 +6,7 @@ a {
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  background: #f31941;
 }
 
 h1 {
@@ -18,10 +19,45 @@ h1 {
   display: none;
 }
 
+#navbar {
+  width: calc(100vw - 50px);
+  height: 40px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 15px;
+  background: white;
+  z-index: 4;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 -5px 10px rgba(0, 0, 0, 0.08);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+#navbar h2 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+#navbar h3 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.12px;
+  transition: 0.2s ease;
+}
+#navbar h3:hover {
+  color: #f31941;
+}
+#navbar #nav {
+  display: flex;
+  gap: 16px;
+}
+
 .header {
   background: #F42C50;
   background: #f31941;
-  padding: 80px 0 30px 0;
+  padding: 100px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,14 +94,89 @@ h1 {
   fill: #f31941;
 }
 
+#main {
+  padding: 20px;
+  width: 94vw;
+  padding: 100px 3vw 60px 3vw;
+  margin-top: -75px;
+  background: white;
+  display: flex;
+  gap: 30px;
+}
+
+#notes {
+  width: 220px;
+}
+#notes h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 16px;
+}
+#notes .notes .note {
+  width: calc(100% - 5px);
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 12px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+#notes .notes .note .vertical {
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 0.75;
+  background-size: 100%;
+  background-position: 50% 50%;
+  transition: 0.2s ease;
+}
+#notes .notes .note .expo {
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+  padding-top: 60px;
+  color: white;
+  background-image: linear-gradient(to top, black 50%, rgba(0, 0, 0, 0));
+}
+#notes .notes .note h2 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+#notes .notes .note p {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  margin: 0;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#notes .notes .note h4 {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  margin: 0;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+#notes .notes .note:hover .vertical {
+  background-size: 104%;
+}
+
 .articles {
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
   margin: auto;
   gap: 20px;
-  padding: 20px;
-  padding-top: 40px;
+  flex: 1;
 }
 .articles a {
   flex: 1 0 calc(33% - 15px);
@@ -77,7 +188,7 @@ h1 {
 }
 .articles a:first-child .article {
   display: flex;
-  gap: 25px;
+  gap: 24px;
 }
 .articles a:first-child .article .thumbnail {
   width: 40%;
@@ -85,18 +196,53 @@ h1 {
   flex-shrink: 0;
 }
 .articles a:first-child .article .expo {
-  margin-top: 8px;
+  margin-top: 4px;
+}
+.articles a:first-child .article .expo h4 {
+  font-size: 14px;
 }
 .articles a:first-child .article .expo h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
   letter-spacing: -1px;
 }
 .articles a:first-child .article .expo h3 {
   margin-top: 20px;
 }
+.articles a:first-child .article .expo .blurb {
+  font-size: 13px;
+  display: block;
+}
 .articles a.inactive {
-  display: none;
+  pointer-events: none;
+  position: relative;
+}
+.articles a.inactive .thumbnail {
+  opacity: 0.25;
+}
+.articles a.inactive .expo {
+  opacity: 0.4;
+}
+.articles a.inactive .expo .tags .tag {
+  opacity: 1;
+}
+.articles a.inactive:before {
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 65px);
+  background-color: #f31941;
+  color: white;
+  padding: 10px 0;
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.7), inset -1px -2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 3;
 }
 .articles .article {
   width: 100%;
@@ -141,14 +287,14 @@ h1 {
   margin-top: 18px;
 }
 .articles .article .expo h4 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.25px;
   margin: 0;
   color: #ff3030;
 }
 .articles .article .expo h1 {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 110%;
   margin: 5px 0 20px 0;
   transition: 0.2s ease;
@@ -168,11 +314,11 @@ h1 {
   width: fit-content;
 }
 .articles .article .expo h3 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: -0.32px;
   margin: 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.35);
 }
 .articles .article .expo p {
   font-family: "Noto Serif JP", sans-serif;
@@ -181,14 +327,18 @@ h1 {
   letter-spacing: -0.18px;
   margin: 0;
 }
+.articles .article .expo .blurb {
+  display: none;
+}
 .articles .article .expo .flags {
   display: flex;
   gap: 5px;
 }
 .articles .article .expo .flags .flag {
-  width: 32px;
+  width: 24px;
+  border: 1px solid white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  border-radius: 3.5px;
 }
 .articles .article.inactive {
   opacity: 0.5;
@@ -201,4 +351,58 @@ h1 {
 }
 .articles .article:hover .expo h1 {
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  body {
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  #navbar {
+    display: none;
+  }
+  .header {
+    width: 100vw;
+    padding: 40px 0px 30px 0px;
+  }
+  .header #logo {
+    height: 80px;
+  }
+  #main {
+    flex-direction: column-reverse;
+    width: 100vw;
+    margin-top: -5.23vw;
+    padding: 0;
+    padding-bottom: 100px;
+  }
+  #main h2 {
+    display: none;
+  }
+  .articles {
+    padding: 50px 20px 0 20px;
+  }
+  .articles a:first-child .article {
+    flex-direction: column;
+  }
+  .articles a:first-child .article .thumbnail {
+    width: 100%;
+  }
+  #notes {
+    width: 100vw;
+  }
+  #notes .notes {
+    width: calc(100% - 40px);
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 20px;
+  }
+  #notes .notes .note {
+    width: 200px;
+    flex-shrink: 0;
+  }
 }/*# sourceMappingURL=home.css.map */
