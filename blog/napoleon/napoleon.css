@@ -1,10 +1,10 @@
-#navbar #banner {
+#top #banner {
   background: #d63030;
   background: linear-gradient(110deg, #3075d6, #000512 60%);
 }
-#navbar #qing {
+#top #qing {
   width: 200px !important;
 }
-#navbar .statue {
+#top .statue {
   height: 40vw;
 }/*# sourceMappingURL=napoleon.css.map */

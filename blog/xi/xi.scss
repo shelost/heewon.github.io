@@ -1,18 +1,13 @@
-
-
-
-#navbar{
+#top{
 
     #banner{
         background: #d63030;
         background: linear-gradient(110deg, #d63030, #100000 60%);
     }
 
-
     .statue{
        // height: 35vw;
     }
-
 
     #left{
         height: 35vw;
@@ -21,6 +16,25 @@
     #right{
         height: 33vw;
     }
+}
 
 
+@media screen and (max-width: 800px){
+    #top{
+        #left{
+            width: 80vw;
+            height: auto;
+            position: fixed;
+            bottom: -40px;
+            left: -40vw;
+        }
+
+        #right{
+            width: 70vw;
+            height: auto;
+            position: fixed;
+            bottom: -40px;
+            right: -40vw;
+        }
+    }
 }

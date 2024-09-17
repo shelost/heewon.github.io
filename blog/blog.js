@@ -62,23 +62,16 @@ for (let i = 0; i < Class('tlcanvas').length; i++){
         ctx = c.getContext('2d'),
         rect = c.getBoundingClientRect()
 
-
     c.width = cx
     c.height = cy
 
     let ex = 0
 
-
     scale = cx / rect.width
-    console.log(scale)
 
     const loop = () => {
 
         ex = (mx - rect.left)*scale
-
-        console.log(mx, rect.left)
-
-
         ctx.clearRect(0, 0, c.width, c.height)
 
         ctx.beginPath()
@@ -93,7 +86,6 @@ for (let i = 0; i < Class('tlcanvas').length; i++){
         window.requestAnimationFrame(loop)
     }
     window.requestAnimationFrame(loop)
-
 }
 
 window.addEventListener('resize', Recalibrate)
@@ -109,3 +101,8 @@ function Recalibrate() {
     }
 }
 
+
+
+const NAV =
+`
+`

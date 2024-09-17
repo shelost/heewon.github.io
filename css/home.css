@@ -25,7 +25,7 @@ h1 {
   position: fixed;
   top: 10px;
   left: 10px;
-  border-radius: 15px;
+  border-radius: 16px;
   background: white;
   z-index: 4;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 -5px 10px rgba(0, 0, 0, 0.08);
@@ -33,23 +33,48 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 16px 0 14px;
+}
+#navbar #logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+}
+#navbar #logo img {
+  height: 20px;
+  margin: 0;
 }
 #navbar h2 {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: -0.2px;
 }
-#navbar h3 {
+#navbar .navbtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+}
+#navbar .navbtn h3 {
+  color: rgba(0, 0, 0, 0.75);
   font-size: 13px;
-  font-weight: 500;
-  letter-spacing: -0.12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
   transition: 0.2s ease;
 }
-#navbar h3:hover {
+#navbar .navbtn h3:hover {
   color: #f31941;
 }
+#navbar .navbtn svg path {
+  stroke-width: 1.5px;
+  stroke: #f31941;
+}
 #navbar #nav {
+  display: flex;
+  gap: 16px;
+}
+#navbar #btns {
   display: flex;
   gap: 16px;
 }

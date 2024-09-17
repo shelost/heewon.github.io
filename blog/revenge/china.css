@@ -1,10 +1,10 @@
-#navbar #banner {
+#top #banner {
   background: #d63030;
   background: linear-gradient(110deg, #d63030, #100000 60%);
 }
-#navbar #left {
+#top #left {
   height: 35vw;
 }
-#navbar #right {
+#top #right {
   height: 33vw;
 }/*# sourceMappingURL=china.css.map */
