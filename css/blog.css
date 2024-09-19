@@ -180,6 +180,7 @@ body {
   width: auto;
   position: absolute;
   bottom: -40px;
+  pointer-events: none;
 }
 #top #terracotta {
   height: 34vw;
