@@ -427,8 +427,9 @@ a{
     text-decoration: none;
     color: black;
     transition: 0.2s ease;
-    border-bottom: 1.5px solid rgba(#0059ff, 0.2);
+    border-bottom: 1px solid rgba(#0059ff, 0.5);
     color: #000c50;
+    cursor: pointer;
     i{
         font-weight: 400;
         font-size: 11px;
@@ -438,7 +439,7 @@ a{
     &:hover{
         color: black;
         background-color: rgba(#0074ff, 0.06);
-        border-bottom: 1.5px solid rgba(#0059ff, 0.3);
+        border-bottom: 1px solid rgba(#0059ff, 0.8);
     }
 }
 .table{
@@ -469,8 +470,6 @@ u{
 
 .table{
     border-radius: 10px;
-    //margin: 140px 0;
-    //transform: scale(1.02) translate(-10px);
 
     .header{
         .cell{
@@ -844,24 +843,27 @@ u{
 
 
 .list{
+    margin-bottom: 40px;
 
     .row{
         display: flex;
-        gap: 15px;
+        gap: 20px;
 
         .portrait{
             width: 80px;
             height: 100px;
+        }
+
+        .text{
+            p{
+                margin-bottom: 0px;
+            }
         }
     }
 
     h2{
         font-size: 36px;
         font-weight: 900;
-    }
-
-    p{
-        font-weight: 500;
     }
 
     li{
@@ -874,6 +876,55 @@ u{
     height: 100px;
     width: fit-content;
 }
+
+
+
+
+
+.timetable{
+    background: #181818;
+    width: 100vw;
+    margin-left: calc(-50vw + 400px);
+
+    padding: 80px 0;
+    gap: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    position: relative;
+    z-index: 3;
+
+
+    img{
+        //width: 100%;
+        width: auto;
+        height: 96vh;
+        margin: 0;
+        transform: none;
+    }
+
+    h2{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 100%;
+        margin: 0;
+    }
+
+    canvas{
+        height: 96vh;
+        width: 128vh;
+        position: absolute;
+        top: 80px;
+        left: calc(50vw - 64vh);
+    }
+
+}
+
 
 
 
@@ -892,6 +943,8 @@ u{
         //overflow: hidden;
         background: white;
     }
+
+
 
     #table{
         //overflow-x: hidden;
@@ -941,7 +994,66 @@ u{
 
     body{
         background: white;
+        padding-bottom: 150px;
     }
+
+    .list{
+        //padding-left: 20px;
+        .row{
+            gap: 0px;
+            .portrait{
+                width: 120px;
+                height: 150px;
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
+
+    .timetable{
+        width: 95vw;
+        height: 90vh;
+        padding: 0;
+        margin: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        border: 1px solid white;
+        box-shadow: 0 15px 40px rgba(black, 0.15);
+        position: inline;
+        border: 1vw solid black;
+
+        display: flex;
+        align-items: center;
+        justify-content: right !important;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90vh;
+            width: auto;
+            margin-left: 5px;
+        }
+
+        canvas{
+            display: none;
+        }
+
+    }
+
+
+    ::-webkit-scrollbar{
+        height: 12px;
+        width: 0;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: #f0f0f0;
+        border-radius: 10px;
+    }
+
+
 
     #navbar{
         display: none;
@@ -1061,8 +1173,10 @@ u{
                 height: 0;
             }
         }
+    }
 
-
+    #signature{
+        padding: 0 40px;
     }
 
 
@@ -1185,50 +1299,3 @@ u{
 ///
 ///
 ///
-
-
-
-.timetable{
-    background: #181818;
-    width: 100vw;
-    margin-left: calc(-50vw + 400px);
-
-    padding: 80px 0;
-    gap: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-
-    position: relative;
-    z-index: 3;
-
-
-    img{
-        //width: 100%;
-        width: auto;
-        height: 96vh;
-        margin: 0;
-        transform: none;
-    }
-
-    h2{
-        font-size: 32px;
-        font-weight: 800;
-        line-height: 100%;
-        margin: 0;
-    }
-
-    canvas{
-        height: 96vh;
-        width: 128vh;
-        position: absolute;
-        top: 80px;
-        left: calc(50vw - 64vh);
-    }
-
-}
-

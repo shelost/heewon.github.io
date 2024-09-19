@@ -376,8 +376,9 @@ a {
   text-decoration: none;
   color: black;
   transition: 0.2s ease;
-  border-bottom: 1.5px solid rgba(0, 89, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 89, 255, 0.5);
   color: #000c50;
+  cursor: pointer;
 }
 a i {
   font-weight: 400;
@@ -388,7 +389,7 @@ a i {
 a:hover {
   color: black;
   background-color: rgba(0, 116, 255, 0.06);
-  border-bottom: 1.5px solid rgba(0, 89, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 89, 255, 0.8);
 }
 
 .table a {
@@ -713,20 +714,23 @@ u {
   font-weight: 700;
 }
 
+.list {
+  margin-bottom: 40px;
+}
 .list .row {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 .list .row .portrait {
   width: 80px;
   height: 100px;
 }
+.list .row .text p {
+  margin-bottom: 0px;
+}
 .list h2 {
   font-size: 36px;
   font-weight: 900;
-}
-.list p {
-  font-weight: 500;
 }
 .list li {
   margin-bottom: 30px;
@@ -736,6 +740,40 @@ u {
   height: 100px;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.timetable {
+  background: #181818;
+  width: 100vw;
+  margin-left: calc(-50vw + 400px);
+  padding: 80px 0;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+.timetable img {
+  width: auto;
+  height: 96vh;
+  margin: 0;
+  transform: none;
+}
+.timetable h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 100%;
+  margin: 0;
+}
+.timetable canvas {
+  height: 96vh;
+  width: 128vh;
+  position: absolute;
+  top: 80px;
+  left: calc(50vw - 64vh);
 }
 
 @media screen and (min-width: 800px) {
@@ -790,6 +828,51 @@ u {
       */
   body {
     background: white;
+    padding-bottom: 150px;
+  }
+  .list .row {
+    gap: 0px;
+  }
+  .list .row .portrait {
+    width: 120px;
+    height: 150px;
+    border-radius: 0 10px 10px 0;
+  }
+  .timetable {
+    width: 95vw;
+    height: 90vh;
+    padding: 0;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    position: inline;
+    border: 1vw solid black;
+    display: flex;
+    align-items: center;
+    justify-content: right !important;
+  }
+  .timetable img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: auto;
+    margin-left: 5px;
+  }
+  .timetable canvas {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    height: 12px;
+    width: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f0f0f0;
+    border-radius: 10px;
   }
   #navbar {
     display: none;
@@ -873,6 +956,9 @@ u {
   h1.title::after {
     content: none;
     height: 0;
+  }
+  #signature {
+    padding: 0 40px;
   }
   ol {
     padding-inline-start: 40px;
@@ -961,37 +1047,4 @@ u {
     text-align: left;
     font-size: 18px;
   }
-}
-.timetable {
-  background: #181818;
-  width: 100vw;
-  margin-left: calc(-50vw + 400px);
-  padding: 80px 0;
-  gap: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: relative;
-  z-index: 3;
-}
-.timetable img {
-  width: auto;
-  height: 96vh;
-  margin: 0;
-  transform: none;
-}
-.timetable h2 {
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 100%;
-  margin: 0;
-}
-.timetable canvas {
-  height: 96vh;
-  width: 128vh;
-  position: absolute;
-  top: 80px;
-  left: calc(50vw - 64vh);
 }/*# sourceMappingURL=blog.css.map */
