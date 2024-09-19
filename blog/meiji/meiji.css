@@ -1,0 +1,12 @@
+#top #banner {
+  background: #d63030;
+  background: linear-gradient(110deg, #ae234d, #120000 60%);
+}
+#top #qing {
+  height: 90px !important;
+  margin-bottom: 30px !important;
+}
+#top .statue {
+  height: 44vw;
+  bottom: -10vw !important;
+}/*# sourceMappingURL=meiji.css.map */
