@@ -6,7 +6,7 @@ a {
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
-  background: #202020;
+  background: white;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
   border-radius: 16px;
   background: white;
   z-index: 4;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 -5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), inset 0 -5px 10px rgba(0, 0, 0, 0.08);
   border: 2px solid white;
   display: flex;
   align-items: center;
@@ -87,11 +87,13 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  color: white;
+  gap: 10px;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .header #logo {
-  width: 400px;
+  width: 500px;
 }
 .header #cassandra {
   font-family: "Newsreader", sans-serif;
@@ -100,6 +102,31 @@ h1 {
   letter-spacing: -1.2px;
   color: white;
   margin: 0;
+}
+.header #subtitle {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 25px;
+  border-top: 1px solid rgba(160, 158, 175, 0.3);
+  /*
+  border-bottom: 1px solid rgba(#A09EAF, 0.75);
+  */
+  padding: 12px 12px 4px 12px;
+}
+.header #subtitle img {
+  height: 15px;
+  margin: 0;
+}
+.header #subtitle h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  color: #A09EAF;
+  margin: 0;
+}
+.header h2 {
+  display: none;
 }
 .header h4 {
   font-size: 14px;
@@ -110,10 +137,14 @@ h1 {
 .header p {
   font-family: "Noto Serif JP", sans-serif;
   font-size: 14px;
+  font-style: italic;
   font-weight: 100;
   margin: 0;
   margin-top: 0px;
   padding: 4px 8px 8px 8px;
+  letter-spacing: -0.3px;
+  width: 400px;
+  line-height: 125%;
   /*
   border-top: 1px solid rgba(white, 0.5);
   border-bottom: 1px solid rgba(white, 0.5);
@@ -125,6 +156,7 @@ h1 {
   height: 5.2vw;
   display: flex;
   flex-direction: column;
+  display: none !important;
 }
 #triangle path {
   fill: #f31941;
@@ -409,7 +441,11 @@ h1 {
     padding: 40px 0px 30px 0px;
   }
   .header #logo {
-    height: 80px;
+    width: 90vw;
+    height: auto;
+  }
+  .header p {
+    width: 85vw;
   }
   #main {
     flex-direction: column-reverse;
